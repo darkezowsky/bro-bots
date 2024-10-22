@@ -1,0 +1,117 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3496699259423516290
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3496699259423516540}
+  - component: {fileID: 3496699259423516541}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3496699259423516540
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3496699259423516290}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3496699259423516541
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3496699259423516290}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23a4b5c4c47ff994394ddcdc30a2c57a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainMixer: {fileID: 24100000, guid: ec4d01e5265841a47af58b64c3e4488b, type: 2}
+  sounds:
+  - name: BGMgame
+    clip: {fileID: 8300000, guid: 83a0a974ab25a4adfba3cbb3a1aaa76e, type: 3}
+    mixerGroup: {fileID: 24300002, guid: ec4d01e5265841a47af58b64c3e4488b, type: 2}
+    loop: 1
+    valume: 0.074
+    pitch: 1
+    source: {fileID: 0}
+  - name: Click
+    clip: {fileID: 8300000, guid: b99da9a57308d4ba1bee1cf1d9038376, type: 3}
+    mixerGroup: {fileID: 24300002, guid: ec4d01e5265841a47af58b64c3e4488b, type: 2}
+    loop: 0
+    valume: 0.074
+    pitch: 1
+    source: {fileID: 0}
+  - name: DoorHit
+    clip: {fileID: 8300000, guid: 7b69beceabbd8f24e8bc62d77ac7ca1c, type: 3}
+    mixerGroup: {fileID: 24300002, guid: ec4d01e5265841a47af58b64c3e4488b, type: 2}
+    loop: 0
+    valume: 0.074
+    pitch: 1
+    source: {fileID: 0}
+  - name: EnemiesDeath
+    clip: {fileID: 8300000, guid: a37f44cbf8c2a7443a3c361efa2f233a, type: 3}
+    mixerGroup: {fileID: 24300002, guid: ec4d01e5265841a47af58b64c3e4488b, type: 2}
+    loop: 0
+    valume: 0.074
+    pitch: 1
+    source: {fileID: 0}
+  - name: EnemiesPush
+    clip: {fileID: 8300000, guid: 958408b32ccf3714ea02821877b0870c, type: 3}
+    mixerGroup: {fileID: 24300002, guid: ec4d01e5265841a47af58b64c3e4488b, type: 2}
+    loop: 0
+    valume: 0.074
+    pitch: 1
+    source: {fileID: 0}
+  - name: EnemyAttack
+    clip: {fileID: 8300000, guid: 65228e4bd627dad4b844eda200666145, type: 3}
+    mixerGroup: {fileID: 24300002, guid: ec4d01e5265841a47af58b64c3e4488b, type: 2}
+    loop: 0
+    valume: 0.074
+    pitch: 1
+    source: {fileID: 0}
+  - name: LevelDown
+    clip: {fileID: 8300000, guid: 4b4dd7245f6104c8c8eb07ccf6b386ed, type: 3}
+    mixerGroup: {fileID: 24300002, guid: ec4d01e5265841a47af58b64c3e4488b, type: 2}
+    loop: 0
+    valume: 0.074
+    pitch: 1
+    source: {fileID: 0}
+  - name: MenuMusic
+    clip: {fileID: 8300000, guid: 5bad19318d4b8527699548fa25ef04b9, type: 3}
+    mixerGroup: {fileID: 24300002, guid: ec4d01e5265841a47af58b64c3e4488b, type: 2}
+    loop: 1
+    valume: 0.074
+    pitch: 1
+    source: {fileID: 0}
+  - name: LevelUp
+    clip: {fileID: 8300000, guid: 8fb12fbbaf4000445afea50228e1371f, type: 3}
+    mixerGroup: {fileID: 24300002, guid: ec4d01e5265841a47af58b64c3e4488b, type: 2}
+    loop: 0
+    valume: 0.074
+    pitch: 1
+    source: {fileID: 0}
+  - name: PlayersDeath
+    clip: {fileID: 8300000, guid: 1fd31868d68903d4f9e2c4a3b7ef98f3, type: 3}
+    mixerGroup: {fileID: 24300002, guid: ec4d01e5265841a47af58b64c3e4488b, type: 2}
+    loop: 0
+    valume: 1
+    pitch: 1
+    source: {fileID: 0}

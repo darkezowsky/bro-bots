@@ -1,0 +1,979 @@
+fileFormatVersion: 2
+guid: cd695cd6468b08c45ab33d8ba77bec89
+ModelImporter:
+  serializedVersion: 19301
+  internalIDToNameTable:
+  - first:
+      74: -4791504522942941401
+    second: idle_pose_layer
+  externalObjects: {}
+  materials:
+    materialImportMode: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: idle_pose_layer
+      takeName: Armature|Armature|mixamo.com|Layer0
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human:
+    - boneName: mixamorig:Hips
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:LeftUpLeg
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:RightUpLeg
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:LeftLeg
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:RightLeg
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:LeftFoot
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:RightFoot
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:Spine
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:Spine1
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:Neck
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:Head
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:LeftShoulder
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:RightShoulder
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:LeftArm
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:RightArm
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:LeftForeArm
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:RightForeArm
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:LeftHand
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:RightHand
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:LeftToeBase
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:RightToeBase
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:LeftHandIndex1
+      humanName: Left Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:LeftHandIndex2
+      humanName: Left Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:LeftHandIndex3
+      humanName: Left Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:RightHandIndex1
+      humanName: Right Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:RightHandIndex2
+      humanName: Right Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:RightHandIndex3
+      humanName: Right Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:Spine2
+      humanName: UpperChest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: idle_pose_layer(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Armature
+      parentName: idle_pose_layer(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0.000000081460335, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mixamorig:Hips
+      parentName: Armature
+      position: {x: 0.022888731, y: 3.3389602, z: -0.026721522}
+      rotation: {x: -0.000000064696515, y: -0.000000043176122, z: -0.000000009573981,
+        w: 1}
+      scale: {x: 1.0000001, y: 1, z: 1}
+    - name: mixamorig:Spine
+      parentName: mixamorig:Hips
+      position: {x: 0.000000005960464, y: 0.38103798, z: 0.000268687}
+      rotation: {x: 0.00035255955, y: 0.000000044707093, z: 0.000000010228776, w: 0.99999994}
+      scale: {x: 1, y: 0.99999994, z: 1}
+    - name: mixamorig:Spine1
+      parentName: mixamorig:Spine
+      position: {x: -0.000000003427267, y: 0.444544, z: -0.000000004917383}
+      rotation: {x: 2.910383e-11, y: -0.000000044699544, z: 0.0000000056194613, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mixamorig:Spine2
+      parentName: mixamorig:Spine1
+      position: {x: 0.000000030994414, y: 0.50805074, z: 0.000000076293944}
+      rotation: {x: 0.000000014872057, y: 0.0000000744953, z: -0.000000014953711,
+        w: 1}
+      scale: {x: 0.9999999, y: 1, z: 1}
+    - name: mixamorig:Neck
+      parentName: mixamorig:Spine2
+      position: {x: -0.00000015258789, y: 0.5715574, z: -0.00000019073485}
+      rotation: {x: -0.00035257632, y: -0.000000029812835, z: -0.000000029791813,
+        w: 0.99999994}
+      scale: {x: 1, y: 1, z: 0.9999999}
+    - name: mixamorig:Head
+      parentName: mixamorig:Neck
+      position: {x: 0.000000038146972, y: 0.21626365, z: 0.02024723}
+      rotation: {x: 0.000000022351742, y: 0.000000007450588, z: 0.000000037252914,
+        w: 1}
+      scale: {x: 0.9999998, y: 1, z: 0.9999998}
+    - name: mixamorig:HeadTop_End
+      parentName: mixamorig:Head
+      position: {x: -0.000000009536743, y: 1.7504274, z: 0.16387914}
+      rotation: {x: -0.000000029802322, y: -0.000000007450583, z: 3.5527137e-15, w: 1}
+      scale: {x: 1.0000001, y: 1, z: 1}
+    - name: mixamorig:HeadTop_End_end
+      parentName: mixamorig:HeadTop_End
+      position: {x: -0, y: 1.7580813, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mixamorig:LeftShoulder
+      parentName: mixamorig:Spine2
+      position: {x: -0.30140266, y: 0.49349913, z: 0.0032434724}
+      rotation: {x: 0.56225276, y: -0.43034667, z: 0.55619395, w: 0.4351114}
+      scale: {x: 1.0000085, y: 1.0000014, z: 1.000001}
+    - name: mixamorig:LeftArm
+      parentName: mixamorig:LeftShoulder
+      position: {x: 0.000000076293944, y: 0.6134259, z: -0.000000038146972}
+      rotation: {x: -0.10449216, y: -0.013520598, z: 0.004651785, w: 0.9944229}
+      scale: {x: 1.0000112, y: 1.000022, z: 1.0000124}
+    - name: mixamorig:LeftForeArm
+      parentName: mixamorig:LeftArm
+      position: {x: 0.00000030517577, y: 1.0640821, z: -0.00000016957522}
+      rotation: {x: -0.017728508, y: 0.00006040372, z: -0.0034019207, w: 0.9998371}
+      scale: {x: 1.0000123, y: 1.0000371, z: 1.0000249}
+    - name: mixamorig:LeftHand
+      parentName: mixamorig:LeftForeArm
+      position: {x: 0.000000038146972, y: 0.8337769, z: -0.00000025749205}
+      rotation: {x: -0.016283434, y: 0.0007122736, z: -0.043703385, w: 0.9989117}
+      scale: {x: 1.0000098, y: 1.0000113, z: 1.0000128}
+    - name: mixamorig:LeftHandIndex1
+      parentName: mixamorig:LeftHand
+      position: {x: -0.000000114440915, y: 0.5718778, z: -0.000000076293944}
+      rotation: {x: 0.0074843997, y: 0.00015353518, z: 0.020519314, w: 0.9997614}
+      scale: {x: 1.0000159, y: 1.0000081, z: 1.0000198}
+    - name: mixamorig:LeftHandIndex2
+      parentName: mixamorig:LeftHandIndex1
+      position: {x: 0.000000114440915, y: 0.14751273, z: -0.00000004529953}
+      rotation: {x: 0.0000015543771, y: -0.000000041982272, z: 0.000000050502983,
+        w: 1}
+      scale: {x: 1.0000027, y: 1.0000068, z: 0.9999983}
+    - name: mixamorig:LeftHandIndex3
+      parentName: mixamorig:LeftHandIndex2
+      position: {x: -0.012421608, y: 0.23673879, z: -0.0009632492}
+      rotation: {x: 0.009825252, y: 0.00046989383, z: -0.011284252, w: 0.999888}
+      scale: {x: 1.0000068, y: 1.0000134, z: 1.0000007}
+    - name: mixamorig:LeftHandIndex4
+      parentName: mixamorig:LeftHandIndex3
+      position: {x: -0.029717507, y: 0.21596187, z: -0.016889153}
+      rotation: {x: -0.00000003026798, y: 0.000000016327276, z: 0.000000057627844,
+        w: 1}
+      scale: {x: 1.0000123, y: 1.0000095, z: 1.000012}
+    - name: mixamorig:LeftHandIndex4_end
+      parentName: mixamorig:LeftHandIndex4
+      position: {x: -0, y: 0.21864988, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mixamorig:RightShoulder
+      parentName: mixamorig:Spine2
+      position: {x: 0.3014023, y: 0.49349445, z: -0.0031336783}
+      rotation: {x: -0.5562993, y: -0.43502885, z: 0.5621541, w: -0.43042275}
+      scale: {x: 1.0000001, y: 0.99999905, z: 0.9999991}
+    - name: mixamorig:RightArm
+      parentName: mixamorig:RightShoulder
+      position: {x: 0.00000017166137, y: 0.61342573, z: -0.00000032424927}
+      rotation: {x: -0.10454948, y: 0.0012787431, z: 0.002460271, w: 0.9945159}
+      scale: {x: 0.99999744, y: 1.0000083, z: 1.0000006}
+    - name: mixamorig:RightForeArm
+      parentName: mixamorig:RightArm
+      position: {x: -0.00000015258789, y: 1.0641085, z: -0.00000019550323}
+      rotation: {x: 0.017539946, y: 0.00032819316, z: -0.018708935, w: -0.99967104}
+      scale: {x: 1.000012, y: 1.000031, z: 1.0000184}
+    - name: mixamorig:RightHand
+      parentName: mixamorig:RightForeArm
+      position: {x: -0, y: 0.8340924, z: 0.000000114440915}
+      rotation: {x: 0.065274194, y: 0.043002065, z: -0.05549399, w: 0.99539465}
+      scale: {x: 1.0000052, y: 0.9999843, z: 1.0000145}
+    - name: mixamorig:RightHandIndex1
+      parentName: mixamorig:RightHand
+      position: {x: 0.0000004959106, y: 0.012410421, z: 0.000000076293944}
+      rotation: {x: -0.00036801508, y: 0.99792767, z: -0.06406908, w: -0.0059529385}
+      scale: {x: 1.0000149, y: 0.999617, z: 1.0004559}
+    - name: mixamorig:RightHandIndex2
+      parentName: mixamorig:RightHandIndex1
+      position: {x: -0.000000038146972, y: 0.02491477, z: -0.00000045776366}
+      rotation: {x: -0.000015126096, y: -0.000002473127, z: -0.00000061653554, w: 1}
+      scale: {x: 1.0000157, y: 1.0000079, z: 1.0000141}
+    - name: mixamorig:RightHandIndex3
+      parentName: mixamorig:RightHandIndex2
+      position: {x: -0.00093105313, y: 0.025498085, z: -0.000368247}
+      rotation: {x: -0.003763108, y: -0.00021565758, z: -0.0055698687, w: 0.9999774}
+      scale: {x: 1.0000021, y: 0.99998486, z: 1.000005}
+    - name: mixamorig:RightHandIndex4
+      parentName: mixamorig:RightHandIndex3
+      position: {x: -0.0013427353, y: 0.0115356445, z: 0.00045726774}
+      rotation: {x: 1.182343e-10, y: -0.00000001024432, z: -0.000000019790674, w: 1}
+      scale: {x: 1.0000097, y: 1.0000079, z: 1.0000111}
+    - name: mixamorig:RightHandIndex4_end
+      parentName: mixamorig:RightHandIndex4
+      position: {x: -0, y: 0.011622765, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mixamorig:LeftUpLeg
+      parentName: mixamorig:Hips
+      position: {x: -0.5442098, y: -0.21193826, z: 0.003925924}
+      rotation: {x: -0.00000032540294, y: 0.00019414948, z: 0.9999997, w: 0.00078060466}
+      scale: {x: 1.0003284, y: 1.0002718, z: 0.99943}
+    - name: mixamorig:LeftLeg
+      parentName: mixamorig:LeftUpLeg
+      position: {x: -0.000000114440915, y: 1.3685863, z: -0.00000018119812}
+      rotation: {x: 0.0010499998, y: -0.000013293337, z: 0.0021437744, w: 0.9999972}
+      scale: {x: 1.0000184, y: 0.999628, z: 1.0004524}
+    - name: mixamorig:LeftFoot
+      parentName: mixamorig:LeftLeg
+      position: {x: 0.00000027179718, y: 1.4502604, z: -0.00000015258789}
+      rotation: {x: 0.51116836, y: 0.003222333, z: -0.0019202582, w: 0.8594725}
+      scale: {x: 1.0000393, y: 1.0002159, z: 0.9999067}
+    - name: mixamorig:LeftToeBase
+      parentName: mixamorig:LeftFoot
+      position: {x: 0.00000013229902, y: 0.45635238, z: -0.000000067949294}
+      rotation: {x: 0.2497577, y: -0.008704783, z: 0.0022438911, w: 0.96826667}
+      scale: {x: 1.0000163, y: 0.999448, z: 1.0005437}
+    - name: mixamorig:LeftToe_End
+      parentName: mixamorig:LeftToeBase
+      position: {x: 0.0000001418218, y: 0.20307529, z: -2.9802322e-10}
+      rotation: {x: -0.000001505017, y: -0.00000017322598, z: 0.00000009080394, w: 1}
+      scale: {x: 1.0000454, y: 1.0000114, z: 1.0000275}
+    - name: mixamorig:LeftToe_End_end
+      parentName: mixamorig:LeftToe_End
+      position: {x: -0, y: 0.20307277, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mixamorig:RightUpLeg
+      parentName: mixamorig:Hips
+      position: {x: 0.5442097, y: -0.21193853, z: 0.004613943}
+      rotation: {x: -0.00000033213158, y: -0.0002435749, z: 0.9999996, w: -0.00089941366}
+      scale: {x: 1.0000479, y: 0.99958014, z: 1.0003924}
+    - name: mixamorig:RightLeg
+      parentName: mixamorig:RightUpLeg
+      position: {x: 0.000000038146972, y: 1.368586, z: 0.000000057220458}
+      rotation: {x: 0.0010856796, y: -0.00000060476077, z: -0.0021437309, w: 0.99999714}
+      scale: {x: 1.0000163, y: 1.0004318, z: 0.99959147}
+    - name: mixamorig:RightFoot
+      parentName: mixamorig:RightLeg
+      position: {x: -0.00000017166137, y: 1.4502656, z: -0.000000019073486}
+      rotation: {x: 0.5113955, y: -0.0032078316, z: 0.001904466, w: 0.85933745}
+      scale: {x: 1.000074, y: 0.9999285, z: 1.0001456}
+    - name: mixamorig:RightToeBase
+      parentName: mixamorig:RightFoot
+      position: {x: 0.000000028610229, y: 0.45775798, z: 0.00000004649162}
+      rotation: {x: 0.24845973, y: 0.008721833, z: -0.0022391395, w: 0.9686004}
+      scale: {x: 1.0000323, y: 1.0004758, z: 0.9995564}
+    - name: mixamorig:RightToe_End
+      parentName: mixamorig:RightToeBase
+      position: {x: -0.000000088214875, y: 0.20254327, z: 0}
+      rotation: {x: -0.0000008046626, y: -0.00000018067655, z: 4.6566123e-10, w: 1}
+      scale: {x: 1.0000259, y: 1.0000119, z: 1.0000004}
+    - name: mixamorig:RightToe_End_end
+      parentName: mixamorig:RightToe_End
+      position: {x: -0, y: 0.2025454, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Sphere.038
+      parentName: idle_pose_layer(Clone)
+      position: {x: 0.0000000029802334, y: -0.000000022645105, z: 0.0000000025108746}
+      rotation: {x: -0.7071068, y: -2.6345658e-11, z: -8.995832e-15, w: 0.7071067}
+      scale: {x: 100, y: 99.99998, z: 100}
+    - name: Sphere.023
+      parentName: idle_pose_layer(Clone)
+      position: {x: -0.000000057220458, y: -0.00000009536742, z: -0.0000000041723407}
+      rotation: {x: -0.7071068, y: 0.000000012011852, z: 4.214697e-10, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: Torus.041
+      parentName: idle_pose_layer(Clone)
+      position: {x: -0.00012812257, y: 1.4503185, z: -0.09820858}
+      rotation: {x: -0.7071068, y: -0.000000008640104, z: -0.000000005373724, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: Cylinder.041
+      parentName: idle_pose_layer(Clone)
+      position: {x: 0.000000022649765, y: -0.000000011622906, z: 0.000000019073484}
+      rotation: {x: -0.7071068, y: -0.000000013882124, z: 0.000000016042145, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: Torus.059
+      parentName: idle_pose_layer(Clone)
+      position: {x: 0.000000022649765, y: -0.000000011622906, z: 0.000000019073484}
+      rotation: {x: -0.7071068, y: -0.000000013882124, z: 0.000000016042145, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: Cube.023
+      parentName: idle_pose_layer(Clone)
+      position: {x: 0.000000014081597, y: 0.00000006213784, z: -0.0000000034272565}
+      rotation: {x: -0.7071068, y: 3.004608e-11, z: 1.247119e-10, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: Torus.060
+      parentName: idle_pose_layer(Clone)
+      position: {x: 0.0000000017881393, y: 0.00000006645918, z: 0.000000014305123}
+      rotation: {x: -0.7071068, y: -0.000000013882124, z: 0.000000016042145, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: Sphere.024
+      parentName: idle_pose_layer(Clone)
+      position: {x: 0.000000022649765, y: -0.000000011622906, z: 0.000000019073484}
+      rotation: {x: -0.7071068, y: -0.000000013882124, z: 0.000000016042145, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: Cylinder.042
+      parentName: idle_pose_layer(Clone)
+      position: {x: 0.000000022649765, y: -0.000000011622906, z: 0.000000019073484}
+      rotation: {x: -0.7071068, y: -0.000000013882124, z: 0.000000016042145, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: Cube.024
+      parentName: idle_pose_layer(Clone)
+      position: {x: 0.000000014081597, y: 0.00000006213784, z: -0.0000000034272565}
+      rotation: {x: -0.7071068, y: 3.004608e-11, z: 1.247119e-10, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: Sphere.039
+      parentName: idle_pose_layer(Clone)
+      position: {x: 0.000000008307397, y: -0.000000025331973, z: -0.0000000032037533}
+      rotation: {x: -0.7071068, y: -7.696741e-10, z: -1.193618e-11, w: 0.7071067}
+      scale: {x: 99.99998, y: 100, z: 100}
+    - name: Cylinder.043
+      parentName: idle_pose_layer(Clone)
+      position: {x: 0.0000000017881393, y: 0.00000006645918, z: 0.000000014305123}
+      rotation: {x: -0.7071068, y: -0.000000013882124, z: 0.000000016042145, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: Torus.046
+      parentName: idle_pose_layer(Clone)
+      position: {x: 0.000000022649765, y: -0.000000011622906, z: 0.000000019073484}
+      rotation: {x: -0.7071068, y: -0.000000013882124, z: 0.000000016042145, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: Torus.061
+      parentName: idle_pose_layer(Clone)
+      position: {x: 0.000000022649765, y: -0.000000011622906, z: 0.000000019073484}
+      rotation: {x: -0.7071068, y: -0.000000013882124, z: 0.000000016042145, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: Sphere.025
+      parentName: idle_pose_layer(Clone)
+      position: {x: 0.000000022649765, y: -0.000000011622906, z: 0.000000019073484}
+      rotation: {x: -0.7071068, y: -0.000000013882124, z: 0.000000016042145, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: Cube.025
+      parentName: idle_pose_layer(Clone)
+      position: {x: 0.000000008307397, y: -0.000000025331973, z: -0.0000000032037533}
+      rotation: {x: -0.7071068, y: -7.696741e-10, z: -1.193618e-11, w: 0.7071067}
+      scale: {x: 99.99998, y: 100, z: 100}
+    - name: Sphere.026
+      parentName: idle_pose_layer(Clone)
+      position: {x: 0.0000000017881393, y: 0.00000006645918, z: 0.000000014305123}
+      rotation: {x: -0.7071068, y: -0.000000013882124, z: 0.000000016042145, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: Torus.062
+      parentName: idle_pose_layer(Clone)
+      position: {x: 0.000000022649765, y: -0.000000011622906, z: 0.000000019073484}
+      rotation: {x: -0.7071068, y: -0.000000013882124, z: 0.000000016042145, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: Cylinder.044
+      parentName: idle_pose_layer(Clone)
+      position: {x: 0.000000022649765, y: -0.000000011622906, z: 0.000000019073484}
+      rotation: {x: -0.7071068, y: -0.000000013882124, z: 0.000000016042145, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: Torus.047
+      parentName: idle_pose_layer(Clone)
+      position: {x: 0.000000022649765, y: -0.000000011622906, z: 0.000000019073484}
+      rotation: {x: -0.7071068, y: -0.000000013882124, z: 0.000000016042145, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: Cube.026
+      parentName: idle_pose_layer(Clone)
+      position: {x: 0.000000008307397, y: -0.000000025331973, z: -0.0000000032037533}
+      rotation: {x: -0.7071068, y: -7.696741e-10, z: -1.193618e-11, w: 0.7071067}
+      scale: {x: 99.99998, y: 100, z: 100}
+    - name: Sphere.027
+      parentName: idle_pose_layer(Clone)
+      position: {x: 0.000000022649765, y: -0.000000011622906, z: 0.000000019073484}
+      rotation: {x: -0.7071068, y: -0.000000013882124, z: 0.000000016042145, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: Torus.048
+      parentName: idle_pose_layer(Clone)
+      position: {x: 0.000000022649765, y: -0.000000011622906, z: 0.000000019073484}
+      rotation: {x: -0.7071068, y: -0.000000013882124, z: 0.000000016042145, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: Torus.063
+      parentName: idle_pose_layer(Clone)
+      position: {x: 0.000000022649765, y: -0.000000011622906, z: 0.000000019073484}
+      rotation: {x: -0.7071068, y: -0.000000013882124, z: 0.000000016042145, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: Cylinder.045
+      parentName: idle_pose_layer(Clone)
+      position: {x: 0.000000022649765, y: -0.000000011622906, z: 0.000000019073484}
+      rotation: {x: -0.7071068, y: -0.000000013882124, z: 0.000000016042145, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: Cube.027
+      parentName: idle_pose_layer(Clone)
+      position: {x: 0.000000008307397, y: -0.000000025331973, z: -0.0000000032037533}
+      rotation: {x: -0.7071068, y: -7.696741e-10, z: -1.193618e-11, w: 0.7071067}
+      scale: {x: 99.99998, y: 100, z: 100}
+    - name: Cube.028
+      parentName: idle_pose_layer(Clone)
+      position: {x: -4.4408915e-17, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: Cylinder.046
+      parentName: idle_pose_layer(Clone)
+      position: {x: -0.00000015079975, y: 0.00000006645918, z: 0.000000014305123}
+      rotation: {x: -0.7071068, y: -0.000000013882124, z: 0.000000016042145, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: Sphere.028
+      parentName: idle_pose_layer(Clone)
+      position: {x: 0.000000022649765, y: -0.000000011622906, z: 0.000000019073484}
+      rotation: {x: -0.7071068, y: -0.000000013882124, z: 0.000000016042145, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: Torus.064
+      parentName: idle_pose_layer(Clone)
+      position: {x: 0.000000022649765, y: -0.000000011622906, z: 0.000000019073484}
+      rotation: {x: -0.7071068, y: -0.000000013882124, z: 0.000000016042145, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: Torus.049
+      parentName: idle_pose_layer(Clone)
+      position: {x: 0.000000022649765, y: -0.000000011622906, z: 0.000000019073484}
+      rotation: {x: -0.7071068, y: -0.000000013882124, z: 0.000000016042145, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: Cylinder.031
+      parentName: idle_pose_layer(Clone)
+      position: {x: -0.00000007510185, y: -0.00000013649463, z: -0.0000000047683937}
+      rotation: {x: -0.7071068, y: -0.0000000031610135, z: -0.0000000032795522, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: Cylinder.047
+      parentName: idle_pose_layer(Clone)
+      position: {x: -0.00000015079975, y: 0.00000006645918, z: 0.000000014305123}
+      rotation: {x: -0.7071068, y: -0.000000013882124, z: 0.000000016042145, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: Sphere.029
+      parentName: idle_pose_layer(Clone)
+      position: {x: 0.0000000017881393, y: 0.00000006645918, z: 0.000000014305123}
+      rotation: {x: -0.7071068, y: -0.000000013882124, z: 0.000000016042145, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: Torus.050
+      parentName: idle_pose_layer(Clone)
+      position: {x: 0.0000000017881393, y: 0.00000006645918, z: 0.000000014305123}
+      rotation: {x: -0.7071068, y: -0.000000013882124, z: 0.000000016042145, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: Torus.065
+      parentName: idle_pose_layer(Clone)
+      position: {x: 0.0000000017881393, y: 0.00000006645918, z: 0.000000014305123}
+      rotation: {x: -0.7071068, y: -0.000000013882124, z: 0.000000016042145, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: Cylinder.050
+      parentName: idle_pose_layer(Clone)
+      position: {x: 0.0000000033474494, y: -0.000000010635702, z: -0.000000008140198}
+      rotation: {x: -0.7071068, y: -4.083787e-11, z: -4.063973e-11, w: 0.7071067}
+      scale: {x: 100, y: 99.99998, z: 100}
+    - name: Cylinder.033
+      parentName: idle_pose_layer(Clone)
+      position: {x: -0.00000007510185, y: -0.00000013649463, z: -0.0000000047683937}
+      rotation: {x: -0.7071068, y: -0.0000000031610135, z: -0.0000000032795522, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: Torus.066
+      parentName: idle_pose_layer(Clone)
+      position: {x: 0.0000000017881393, y: 0.00000006645918, z: 0.000000014305123}
+      rotation: {x: -0.7071068, y: -0.000000013882124, z: 0.000000016042145, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: Sphere.030
+      parentName: idle_pose_layer(Clone)
+      position: {x: 0.000000022649765, y: -0.000000011622906, z: 0.000000019073484}
+      rotation: {x: -0.7071068, y: -0.000000013882124, z: 0.000000016042145, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: Torus.051
+      parentName: idle_pose_layer(Clone)
+      position: {x: 0.000000022649765, y: -0.000000011622906, z: 0.000000019073484}
+      rotation: {x: -0.7071068, y: -0.000000013882124, z: 0.000000016042145, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: Circle.017
+      parentName: idle_pose_layer(Clone)
+      position: {x: 0.000000014081597, y: 0.00000006213784, z: -0.0000000034272565}
+      rotation: {x: -0.7071068, y: 3.004608e-11, z: 1.247119e-10, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: Cylinder.034
+      parentName: idle_pose_layer(Clone)
+      position: {x: 0.000000022649765, y: -0.000000011622906, z: 0.000000019073484}
+      rotation: {x: -0.7071068, y: -0.000000013882124, z: 0.000000016042145, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: Torus.067
+      parentName: idle_pose_layer(Clone)
+      position: {x: 0.0000000017881393, y: 0.00000006645918, z: 0.000000014305123}
+      rotation: {x: -0.7071068, y: -0.000000013882124, z: 0.000000016042145, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: Torus.052
+      parentName: idle_pose_layer(Clone)
+      position: {x: 0.000000022649765, y: -0.000000011622906, z: 0.000000019073484}
+      rotation: {x: -0.7071068, y: -0.000000013882124, z: 0.000000016042145, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: Sphere.031
+      parentName: idle_pose_layer(Clone)
+      position: {x: 0.000000022649765, y: -0.000000011622906, z: 0.000000019073484}
+      rotation: {x: -0.7071068, y: -0.000000013882124, z: 0.000000016042145, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: Cylinder.051
+      parentName: idle_pose_layer(Clone)
+      position: {x: 0.000000014081597, y: 0.00000006213784, z: -0.0000000034272565}
+      rotation: {x: -0.7071068, y: 3.004608e-11, z: 1.247119e-10, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: Circle.018
+      parentName: idle_pose_layer(Clone)
+      position: {x: 0.000000008307397, y: -0.000000025331973, z: -0.0000000032037533}
+      rotation: {x: -0.7071068, y: -7.696741e-10, z: -1.193618e-11, w: 0.7071067}
+      scale: {x: 99.99998, y: 100, z: 100}
+    - name: Cube.017
+      parentName: idle_pose_layer(Clone)
+      position: {x: 0.0000000017881393, y: 0.0000000037625436, z: 0.0000000011920934}
+      rotation: {x: -0.7071068, y: -0.000000011656236, z: -0.000000011633191, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: Sphere.032
+      parentName: idle_pose_layer(Clone)
+      position: {x: 0.0000000017881393, y: 0.00000006645918, z: 0.000000014305123}
+      rotation: {x: -0.7071068, y: -0.000000013882124, z: 0.000000016042145, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: Torus.068
+      parentName: idle_pose_layer(Clone)
+      position: {x: 0.0000000017881393, y: 0.00000006645918, z: 0.000000014305123}
+      rotation: {x: -0.7071068, y: -0.000000013882124, z: 0.000000016042145, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: Cylinder.035
+      parentName: idle_pose_layer(Clone)
+      position: {x: 0.000000022649765, y: -0.000000011622906, z: 0.000000019073484}
+      rotation: {x: -0.7071068, y: -0.000000013882124, z: 0.000000016042145, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: Torus.053
+      parentName: idle_pose_layer(Clone)
+      position: {x: 0.000000022649765, y: -0.000000011622906, z: 0.000000019073484}
+      rotation: {x: -0.7071068, y: -0.000000013882124, z: 0.000000016042145, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: Cylinder.052
+      parentName: idle_pose_layer(Clone)
+      position: {x: 0.000000008307397, y: -0.000000025331973, z: -0.0000000032037533}
+      rotation: {x: -0.7071068, y: -7.696741e-10, z: -1.193618e-11, w: 0.7071067}
+      scale: {x: 99.99998, y: 100, z: 100}
+    - name: Cube.018
+      parentName: idle_pose_layer(Clone)
+      position: {x: 0.0000000029802334, y: -0.000000022645105, z: 0.0000000025108746}
+      rotation: {x: -0.7071068, y: -2.6345658e-11, z: -8.995832e-15, w: 0.7071067}
+      scale: {x: 100, y: 99.99998, z: 100}
+    - name: Torus.069
+      parentName: idle_pose_layer(Clone)
+      position: {x: 0.0000000017881393, y: 0.00000006645918, z: 0.000000014305123}
+      rotation: {x: -0.7071068, y: -0.000000013882124, z: 0.000000016042145, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: Sphere.033
+      parentName: idle_pose_layer(Clone)
+      position: {x: 0.000000022649765, y: -0.000000011622906, z: 0.000000019073484}
+      rotation: {x: -0.7071068, y: -0.000000013882124, z: 0.000000016042145, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: Cylinder.036
+      parentName: idle_pose_layer(Clone)
+      position: {x: 0.000000022649765, y: -0.000000011622906, z: 0.000000019073484}
+      rotation: {x: -0.7071068, y: -0.000000013882124, z: 0.000000016042145, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: Torus.054
+      parentName: idle_pose_layer(Clone)
+      position: {x: 0.000000022649765, y: -0.000000011622906, z: 0.000000019073484}
+      rotation: {x: -0.7071068, y: -0.000000013882124, z: 0.000000016042145, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: Cylinder.054
+      parentName: idle_pose_layer(Clone)
+      position: {x: 0.000000008307397, y: -0.000000025331973, z: -0.0000000032037533}
+      rotation: {x: -0.7071068, y: -7.696741e-10, z: -1.193618e-11, w: 0.7071067}
+      scale: {x: 99.99998, y: 100, z: 100}
+    - name: Cylinder.057
+      parentName: idle_pose_layer(Clone)
+      position: {x: -5.662137e-17, y: 0.000000099232416, z: -0.0000000055134137}
+      rotation: {x: -0.7071068, y: 1.7431089e-24, z: -1.7698171e-24, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: Cube.019
+      parentName: idle_pose_layer(Clone)
+      position: {x: 0.000000009536743, y: 0.00000007390975, z: 0.000000040531162}
+      rotation: {x: -0.7071068, y: 0.000000012011852, z: 4.214697e-10, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: Cylinder.037
+      parentName: idle_pose_layer(Clone)
+      position: {x: 0.000000022649765, y: -0.000000011622906, z: 0.000000019073484}
+      rotation: {x: -0.7071068, y: -0.000000013882124, z: 0.000000016042145, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: Torus.055
+      parentName: idle_pose_layer(Clone)
+      position: {x: 0.0000000017881393, y: 0.00000006645918, z: 0.000000014305123}
+      rotation: {x: -0.7071068, y: -0.000000013882124, z: 0.000000016042145, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: Torus.070
+      parentName: idle_pose_layer(Clone)
+      position: {x: -0.00000015079975, y: 0.00000006645918, z: 0.000000014305123}
+      rotation: {x: -0.7071068, y: -0.000000013882124, z: 0.000000016042145, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: Sphere.034
+      parentName: idle_pose_layer(Clone)
+      position: {x: 0.000000022649765, y: -0.000000011622906, z: 0.000000019073484}
+      rotation: {x: -0.7071068, y: -0.000000013882124, z: 0.000000016042145, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: Cylinder.058
+      parentName: idle_pose_layer(Clone)
+      position: {x: -0.00000003904104, y: -0.000000033834947, z: -0.0000000065565153}
+      rotation: {x: -0.7071068, y: -0.0000000023232212, z: -0.0000000026173035, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: Cube.020
+      parentName: idle_pose_layer(Clone)
+      position: {x: 0.0000000017881393, y: 0.00000006645918, z: 0.000000014305123}
+      rotation: {x: -0.7071068, y: -0.000000013882124, z: 0.000000016042145, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: Sphere.035
+      parentName: idle_pose_layer(Clone)
+      position: {x: 0.0000000017881393, y: 0.00000006645918, z: 0.000000014305123}
+      rotation: {x: -0.7071068, y: -0.000000013882124, z: 0.000000016042145, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: Torus.071
+      parentName: idle_pose_layer(Clone)
+      position: {x: -0.00000015079975, y: 0.00000006645918, z: 0.000000014305123}
+      rotation: {x: -0.7071068, y: -0.000000013882124, z: 0.000000016042145, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: Torus.056
+      parentName: idle_pose_layer(Clone)
+      position: {x: 0.000000022649765, y: -0.000000011622906, z: 0.000000019073484}
+      rotation: {x: -0.7071068, y: -0.000000013882124, z: 0.000000016042145, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: Cylinder.038
+      parentName: idle_pose_layer(Clone)
+      position: {x: 0.000000022649765, y: -0.000000011622906, z: 0.000000019073484}
+      rotation: {x: -0.7071068, y: -0.000000013882124, z: 0.000000016042145, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: Cube.021
+      parentName: idle_pose_layer(Clone)
+      position: {x: 0.000000008307397, y: -0.000000025331973, z: -0.0000000032037533}
+      rotation: {x: -0.7071068, y: -7.696741e-10, z: -1.193618e-11, w: 0.7071067}
+      scale: {x: 99.99998, y: 100, z: 100}
+    - name: Sphere.021
+      parentName: idle_pose_layer(Clone)
+      position: {x: 0.0000000017881393, y: 0.0000000037625436, z: 0.0000000011920934}
+      rotation: {x: -0.7071068, y: -0.000000011656236, z: -0.000000011633191, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: Sphere.036
+      parentName: idle_pose_layer(Clone)
+      position: {x: -0.00000015079975, y: 0.00000006645918, z: 0.000000014305123}
+      rotation: {x: -0.7071068, y: -0.000000013882124, z: 0.000000016042145, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: Torus.072
+      parentName: idle_pose_layer(Clone)
+      position: {x: -0.00000015079975, y: 0.00000006645918, z: 0.000000014305123}
+      rotation: {x: -0.7071068, y: -0.000000013882124, z: 0.000000016042145, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: Torus.057
+      parentName: idle_pose_layer(Clone)
+      position: {x: 0.000000022649765, y: -0.000000011622906, z: 0.000000019073484}
+      rotation: {x: -0.7071068, y: -0.000000013882124, z: 0.000000016042145, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: Cylinder.039
+      parentName: idle_pose_layer(Clone)
+      position: {x: 0.000000022649765, y: -0.000000011622906, z: 0.000000019073484}
+      rotation: {x: -0.7071068, y: -0.000000013882124, z: 0.000000016042145, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: Cube.022
+      parentName: idle_pose_layer(Clone)
+      position: {x: 0.000000014081597, y: 0.00000006213784, z: -0.0000000034272565}
+      rotation: {x: -0.7071068, y: 3.004608e-11, z: 1.247119e-10, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: Sphere.022
+      parentName: idle_pose_layer(Clone)
+      position: {x: -0.00000007510185, y: -0.00000013649463, z: -0.0000000047683937}
+      rotation: {x: -0.7071068, y: -0.0000000031610135, z: -0.0000000032795522, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: Cylinder.040
+      parentName: idle_pose_layer(Clone)
+      position: {x: 0.0000000017881393, y: 0.00000006645918, z: 0.000000014305123}
+      rotation: {x: -0.7071068, y: -0.000000013882124, z: 0.000000016042145, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: Sphere.037
+      parentName: idle_pose_layer(Clone)
+      position: {x: -0.00000015079975, y: 0.00000006645918, z: 0.000000014305123}
+      rotation: {x: -0.7071068, y: -0.000000013882124, z: 0.000000016042145, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: Torus.073
+      parentName: idle_pose_layer(Clone)
+      position: {x: -0.00000015079975, y: 0.00000006645918, z: 0.000000014305123}
+      rotation: {x: -0.7071068, y: -0.000000013882124, z: 0.000000016042145, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: Torus.058
+      parentName: idle_pose_layer(Clone)
+      position: {x: 0.000000022649765, y: -0.000000011622906, z: 0.000000019073484}
+      rotation: {x: -0.7071068, y: -0.000000013882124, z: 0.000000016042145, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 3
+  humanoidOversampling: 1
+  avatarSetup: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

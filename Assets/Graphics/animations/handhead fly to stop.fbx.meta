@@ -1,0 +1,205 @@
+fileFormatVersion: 2
+guid: 0bb3fcbd7297963418393dd6d49e7b1c
+ModelImporter:
+  serializedVersion: 19301
+  internalIDToNameTable:
+  - first:
+      74: 2264077025236624520
+    second: handhead fly to stop
+  externalObjects: {}
+  materials:
+    materialImportMode: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: "Invalid Avatar Rig Configuration. Missing or invalid transform:\n\tRequired
+      human bone 'LeftLowerLeg' not found\n"
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: handhead fly to stop
+      takeName: Armature.001|Armature.001Action
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton:
+    - name: handhead fly to stop(Clone)
+      parentName: 
+      position: {x: 0.3330434, y: 4.4666986, z: 3.7242901}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: Bone
+      parentName: handhead fly to stop(Clone)
+      position: {x: 0.000039841016, y: 5.1052504e-12, z: -0.00003799677}
+      rotation: {x: 0.270598, y: 0.65328157, z: -0.6532814, w: 0.27059808}
+      scale: {x: 0.99999994, y: 1.0000002, z: 1}
+    - name: Circle.027
+      parentName: Bone
+      position: {x: 0.0000013034046, y: -0.000055036544, z: 0.0010157203}
+      rotation: {x: 0.2705979, y: 0.6532817, z: -0.6532814, w: -0.27059805}
+      scale: {x: 0.9999996, y: 1, z: 0.9999996}
+    - name: Circle.028
+      parentName: Bone
+      position: {x: 0.0000013034046, y: -0.000055036544, z: 0.0010157203}
+      rotation: {x: 0.2705979, y: 0.6532817, z: -0.6532814, w: -0.27059805}
+      scale: {x: 0.9999996, y: 1, z: 0.9999996}
+    - name: Circle.029
+      parentName: Bone
+      position: {x: 0.0000013034046, y: -0.000055036544, z: 0.0010157203}
+      rotation: {x: 0.2705979, y: 0.6532817, z: -0.6532814, w: -0.27059805}
+      scale: {x: 0.9999996, y: 1, z: 0.9999996}
+    - name: Cube.031
+      parentName: Bone
+      position: {x: 0.0000013034046, y: -0.000055036544, z: 0.0010157203}
+      rotation: {x: 0.2705979, y: 0.6532817, z: -0.6532814, w: -0.27059805}
+      scale: {x: 0.9999996, y: 1, z: 0.9999996}
+    - name: Cube.032
+      parentName: Bone
+      position: {x: 0.0000013034046, y: -0.000055036544, z: 0.0010157203}
+      rotation: {x: 0.2705979, y: 0.6532817, z: -0.6532814, w: -0.27059805}
+      scale: {x: 0.9999996, y: 1, z: 0.9999996}
+    - name: Plane.003
+      parentName: Bone
+      position: {x: 0.0000013034046, y: -0.000055036544, z: 0.0010157203}
+      rotation: {x: 0.2705979, y: 0.6532817, z: -0.6532814, w: -0.27059805}
+      scale: {x: 0.9999996, y: 1, z: 0.9999996}
+    - name: Plane.004
+      parentName: Bone
+      position: {x: 0.0000013034046, y: -0.000055036544, z: 0.0010157203}
+      rotation: {x: 0.2705979, y: 0.6532817, z: -0.6532814, w: -0.27059805}
+      scale: {x: 0.9999996, y: 1, z: 0.9999996}
+    - name: Plane.005
+      parentName: Bone
+      position: {x: 0.0000013034046, y: -0.000055036544, z: 0.0010157203}
+      rotation: {x: 0.2705979, y: 0.6532817, z: -0.6532814, w: -0.27059805}
+      scale: {x: 0.9999996, y: 1, z: 0.9999996}
+    - name: Torus.080
+      parentName: Bone
+      position: {x: 0.0000013034046, y: -0.000055036544, z: 0.0010157203}
+      rotation: {x: 0.2705979, y: 0.6532817, z: -0.6532814, w: -0.27059805}
+      scale: {x: 0.9999996, y: 1, z: 0.9999996}
+    - name: Torus.074
+      parentName: Bone
+      position: {x: 0.0000013034046, y: -0.000055036544, z: 0.0010157203}
+      rotation: {x: 0.2705979, y: 0.6532817, z: -0.6532814, w: -0.27059805}
+      scale: {x: 0.9999996, y: 1, z: 0.9999996}
+    - name: Torus.001
+      parentName: Bone
+      position: {x: 0.0013172734, y: 0.0091070235, z: -0.005760555}
+      rotation: {x: 0.84830534, y: -0.35137933, z: 0.36596674, w: 0.1515885}
+      scale: {x: 0.9999997, y: 1, z: 0.9999995}
+    - name: Bone_end
+      parentName: Bone
+      position: {x: -7.246865e-11, y: 0.01, z: -1.8318679e-17}
+      rotation: {x: 0.000000029802326, y: -0.000000029802326, z: -0.2524448, w: 0.9676113}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bone_end_end
+      parentName: Bone_end
+      position: {x: -0, y: 0.010000001, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

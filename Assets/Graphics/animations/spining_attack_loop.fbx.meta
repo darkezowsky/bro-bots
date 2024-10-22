@@ -1,0 +1,983 @@
+fileFormatVersion: 2
+guid: 3e0e12108f38fa342bbefad204020033
+ModelImporter:
+  serializedVersion: 19301
+  internalIDToNameTable:
+  - first:
+      74: -4791504522942941401
+    second: spining_attack_loop
+  externalObjects: {}
+  materials:
+    materialImportMode: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: "\nClip 'Armature|Armature|mixamo.com|Layer0' has import
+      animation warnings that might lower retargeting quality:\nNote: Activate translation
+      DOF on avatar to improve retargeting quality.\n\t'mixamorig:LeftUpLeg' has
+      scale animation that will be discarded.\n\t'mixamorig:RightUpLeg' has scale
+      animation that will be discarded.\n"
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: spining_attack_loop
+      takeName: Armature|Armature|mixamo.com|Layer0
+      internalID: 0
+      firstFrame: 90
+      lastFrame: 151
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human:
+    - boneName: mixamorig:Hips
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:LeftUpLeg
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:RightUpLeg
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:LeftLeg
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:RightLeg
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:LeftFoot
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:RightFoot
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:Spine
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:Spine1
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:Neck
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:Head
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:LeftShoulder
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:RightShoulder
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:LeftArm
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:RightArm
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:LeftForeArm
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:RightForeArm
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:LeftHand
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:RightHand
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:LeftToeBase
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:RightToeBase
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:LeftHandIndex1
+      humanName: Left Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:LeftHandIndex2
+      humanName: Left Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:LeftHandIndex3
+      humanName: Left Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:RightHandIndex1
+      humanName: Right Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:RightHandIndex2
+      humanName: Right Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:RightHandIndex3
+      humanName: Right Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:Spine2
+      humanName: UpperChest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: spining_attack_loop(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Armature
+      parentName: spining_attack_loop(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0.00000008146033, y: -1.3389194e-22, z: -1.6436458e-15, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mixamorig:Hips
+      parentName: Armature
+      position: {x: -0.017126836, y: 3.3396754, z: -0.020069715}
+      rotation: {x: 0.0007761948, y: -0.0025132627, z: 0.0000021478434, w: 0.99999654}
+      scale: {x: 1.0000356, y: 1, z: 1.0000356}
+    - name: mixamorig:Spine
+      parentName: mixamorig:Hips
+      position: {x: -0.000000019073486, y: 0.38103804, z: 0.00026869774}
+      rotation: {x: 0.00035258004, y: 0.00000014901161, z: 0.00000000740581, w: 1}
+      scale: {x: 1.0000334, y: 0.99999994, z: 1.0000339}
+    - name: mixamorig:Spine1
+      parentName: mixamorig:Spine
+      position: {x: -0.000000028610229, y: 0.44454387, z: 0.0000000047683715}
+      rotation: {x: -0.000000022322636, y: -0.000000029802319, z: 1.0504936e-11, w: 1}
+      scale: {x: 1.0000067, y: 1.0000004, z: 1.0000019}
+    - name: mixamorig:Spine2
+      parentName: mixamorig:Spine1
+      position: {x: 0.000000019073486, y: 0.5080508, z: -0.000000028610229}
+      rotation: {x: 0.0000000075087865, y: -9.2015276e-12, z: -0.000000026091579,
+        w: 1}
+      scale: {x: 1.0000271, y: 0.9999995, z: 1.0000257}
+    - name: mixamorig:Neck
+      parentName: mixamorig:Spine2
+      position: {x: -0.000000038146972, y: 0.5715569, z: -0.0000000667572}
+      rotation: {x: -0.00035258385, y: -0.000000059604645, z: 0.000000018664744, w: 1}
+      scale: {x: 1.0000356, y: 1.0000001, z: 1.0000353}
+    - name: mixamorig:Head
+      parentName: mixamorig:Neck
+      position: {x: -0.000000057220458, y: 0.21626405, z: 0.020247182}
+      rotation: {x: 0.000000029802315, y: 0.000000029802315, z: 0.0000000018626425,
+        w: 1}
+      scale: {x: 0.9999907, y: 0.9999998, z: 0.9999914}
+    - name: mixamorig:HeadTop_End
+      parentName: mixamorig:Head
+      position: {x: 0.000000047683713, y: 1.7504267, z: 0.16387919}
+      rotation: {x: -0, y: -0, z: -9.3132246e-10, w: 1}
+      scale: {x: 1.0000203, y: 0.9999948, z: 1.0000203}
+    - name: mixamorig:HeadTop_End_end
+      parentName: mixamorig:HeadTop_End
+      position: {x: -0, y: 1.7580813, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mixamorig:LeftShoulder
+      parentName: mixamorig:Spine2
+      position: {x: -0.30140254, y: 0.49349883, z: 0.0032435416}
+      rotation: {x: -0.5622526, y: 0.4303469, z: -0.5561937, w: -0.43511164}
+      scale: {x: 1.0000367, y: 1.0000266, z: 1.0000143}
+    - name: mixamorig:LeftArm
+      parentName: mixamorig:LeftShoulder
+      position: {x: -0.00000015258789, y: 0.6134258, z: -0.00000037252903}
+      rotation: {x: -0.10446653, y: -0.013520865, z: 0.004651427, w: 0.99442565}
+      scale: {x: 1.0000241, y: 1.0010062, z: 0.99902964}
+    - name: mixamorig:LeftForeArm
+      parentName: mixamorig:LeftArm
+      position: {x: 0.00000005483627, y: 1.0640826, z: -0.000000038146972}
+      rotation: {x: -0.017728657, y: 0.000060486607, z: -0.0034018827, w: 0.9998371}
+      scale: {x: 1.0000178, y: 0.9998555, z: 1.000166}
+    - name: mixamorig:LeftHand
+      parentName: mixamorig:LeftForeArm
+      position: {x: -0.00000024318695, y: 0.8337767, z: 0.00000015258789}
+      rotation: {x: -0.016282685, y: 0.0007122101, z: -0.043703347, w: 0.9989117}
+      scale: {x: 0.99999136, y: 1.0000437, z: 1.0000482}
+    - name: mixamorig:LeftHandIndex1
+      parentName: mixamorig:LeftHand
+      position: {x: 0.00000014543534, y: 0.5718776, z: -0.000000059604645}
+      rotation: {x: 0.0074843056, y: 0.00015368425, z: 0.020519279, w: 0.99976146}
+      scale: {x: 1.0001779, y: 0.99982166, z: 1.0000429}
+    - name: mixamorig:LeftHandIndex2
+      parentName: mixamorig:LeftHandIndex1
+      position: {x: 0.000000023841856, y: 0.14751327, z: -0.00000014543534}
+      rotation: {x: 0.0000014314426, y: 0.0000000011496012, z: -0.0000000011964402,
+        w: 1}
+      scale: {x: 1.0000236, y: 1.0000201, z: 1.0000021}
+    - name: mixamorig:LeftHandIndex3
+      parentName: mixamorig:LeftHandIndex2
+      position: {x: -0.012421598, y: 0.23673885, z: -0.0009639549}
+      rotation: {x: 0.009783464, y: 0.0004691122, z: -0.011248777, w: 0.9998888}
+      scale: {x: 1.0000205, y: 1.0000087, z: 1.0000055}
+    - name: mixamorig:LeftHandIndex4
+      parentName: mixamorig:LeftHandIndex3
+      position: {x: -0.029717391, y: 0.21596177, z: -0.016889276}
+      rotation: {x: 0.0000000311993, y: -0.00000010931398, z: -0.000000058794797,
+        w: 1}
+      scale: {x: 1.0000144, y: 1.0000095, z: 1.0000008}
+    - name: mixamorig:LeftHandIndex4_end
+      parentName: mixamorig:LeftHandIndex4
+      position: {x: -0, y: 0.21864988, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mixamorig:RightShoulder
+      parentName: mixamorig:Spine2
+      position: {x: 0.30140245, y: 0.4934943, z: -0.0031335736}
+      rotation: {x: -0.5562997, y: -0.43502846, z: 0.56215453, w: -0.43042222}
+      scale: {x: 1.0000045, y: 1.0000299, z: 1.000021}
+    - name: mixamorig:RightArm
+      parentName: mixamorig:RightShoulder
+      position: {x: -0.000000104904174, y: 0.6134256, z: 0.00000037670134}
+      rotation: {x: -0.1045171, y: 0.0012786834, z: 0.0024605093, w: 0.99451923}
+      scale: {x: 1.0000006, y: 1.0009717, z: 0.9990374}
+    - name: mixamorig:RightForeArm
+      parentName: mixamorig:RightArm
+      position: {x: -0.000000076293944, y: 1.0641086, z: -0.00000014066696}
+      rotation: {x: -0.01753783, y: -0.00032820387, z: 0.01870884, w: 0.99967116}
+      scale: {x: 1.0000007, y: 0.99984634, z: 1.0001659}
+    - name: mixamorig:RightHand
+      parentName: mixamorig:RightForeArm
+      position: {x: -0.0000005340576, y: 0.83409256, z: -0.00000022888183}
+      rotation: {x: 0.06580541, y: 0.042748295, z: -0.056037255, w: 0.9953402}
+      scale: {x: 1.0000013, y: 1.0002712, z: 0.99975693}
+    - name: mixamorig:RightHandIndex1
+      parentName: mixamorig:RightHand
+      position: {x: -0.000000019073486, y: 0.012410236, z: 0.000000009536743}
+      rotation: {x: -0.000359746, y: 0.9978856, z: -0.06471712, w: -0.005991162}
+      scale: {x: 1.0000265, y: 0.9804984, z: 1.0198998}
+    - name: mixamorig:RightHandIndex2
+      parentName: mixamorig:RightHandIndex1
+      position: {x: -0.000000057220458, y: 0.024914837, z: -0.00000029444695}
+      rotation: {x: -0.000015125774, y: -0.0000024046742, z: -0.00000079558214, w: 1}
+      scale: {x: 1.000014, y: 1.0000182, z: 0.99999964}
+    - name: mixamorig:RightHandIndex3
+      parentName: mixamorig:RightHandIndex2
+      position: {x: -0.00093118666, y: 0.025498237, z: -0.0003679657}
+      rotation: {x: -0.0044938987, y: -0.0002633731, z: -0.0065310635, w: 0.9999685}
+      scale: {x: 0.999998, y: 0.9999914, z: 1}
+    - name: mixamorig:RightHandIndex4
+      parentName: mixamorig:RightHandIndex3
+      position: {x: -0.001342659, y: 0.011535797, z: 0.00045703887}
+      rotation: {x: 4.0017753e-11, y: 0.000000011641755, z: -0.000000026775462, w: 1}
+      scale: {x: 1.0000187, y: 1.0000284, z: 1.0000091}
+    - name: mixamorig:RightHandIndex4_end
+      parentName: mixamorig:RightHandIndex4
+      position: {x: -0, y: 0.011622765, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mixamorig:LeftUpLeg
+      parentName: mixamorig:Hips
+      position: {x: -0.54420984, y: -0.21193846, z: 0.003925896}
+      rotation: {x: -0.00000041723484, y: -0.000053416436, z: 0.9999997, w: 0.0007805906}
+      scale: {x: 1.0001988, y: 1.0004873, z: 0.99940664}
+    - name: mixamorig:LeftLeg
+      parentName: mixamorig:LeftUpLeg
+      position: {x: -0.000000057220458, y: 1.368586, z: 0.000000057220458}
+      rotation: {x: 0.0010499744, y: -0.000014345084, z: 0.0021437106, w: 0.9999972}
+      scale: {x: 0.99999696, y: 0.9994837, z: 1.0005913}
+    - name: mixamorig:LeftFoot
+      parentName: mixamorig:LeftLeg
+      position: {x: 0.00000010728836, y: 1.4502604, z: 0.00000008463859}
+      rotation: {x: 0.5111646, y: 0.0032233614, z: -0.001918619, w: 0.85947466}
+      scale: {x: 0.99999696, y: 1.0001749, z: 0.9998497}
+    - name: mixamorig:LeftToeBase
+      parentName: mixamorig:LeftFoot
+      position: {x: 0.000000036340786, y: 0.45635238, z: -0.000000072941184}
+      rotation: {x: -0.2497623, y: 0.008705928, z: -0.0022395493, w: -0.9682655}
+      scale: {x: 1.0000112, y: 0.99835604, z: 1.0016679}
+    - name: mixamorig:LeftToe_End
+      parentName: mixamorig:LeftToeBase
+      position: {x: 0.000000040389715, y: 0.20307522, z: -0.0000000023841857}
+      rotation: {x: -0.0000014454124, y: -0.00000016670673, z: 0.000000115949646,
+        w: 1}
+      scale: {x: 0.99999815, y: 1.0000179, z: 1.000024}
+    - name: mixamorig:LeftToe_End_end
+      parentName: mixamorig:LeftToe_End
+      position: {x: -0, y: 0.20307277, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mixamorig:RightUpLeg
+      parentName: mixamorig:Hips
+      position: {x: 0.5442097, y: -0.21193862, z: 0.0046140477}
+      rotation: {x: -0.00000050663726, y: 0.00012121048, z: 0.99999964, w: -0.0008994}
+      scale: {x: 1.0000556, y: 0.99931836, z: 1.0006734}
+    - name: mixamorig:RightLeg
+      parentName: mixamorig:RightUpLeg
+      position: {x: -0.000000114440915, y: 1.3685861, z: -0.000000076293944}
+      rotation: {x: 0.0010857286, y: -0.0000021900044, z: -0.0021437397, w: 0.9999971}
+      scale: {x: 1.0000035, y: 1.000812, z: 0.999303}
+    - name: mixamorig:RightFoot
+      parentName: mixamorig:RightLeg
+      position: {x: -0.0000000047683715, y: 1.4502655, z: 0}
+      rotation: {x: 0.5113916, y: -0.0032062721, z: 0.0019067513, w: 0.8593397}
+      scale: {x: 1.0000103, y: 0.999791, z: 1.0002548}
+    - name: mixamorig:RightToeBase
+      parentName: mixamorig:RightFoot
+      position: {x: -0.00000003193534, y: 0.45775795, z: -0.00000002771616}
+      rotation: {x: -0.2484642, y: -0.008720153, z: 0.0022454087, w: -0.9685992}
+      scale: {x: 1.0000023, y: 1.0040299, z: 0.99607414}
+    - name: mixamorig:RightToe_End
+      parentName: mixamorig:RightToeBase
+      position: {x: -0.000000068892255, y: 0.20254332, z: -5.9604643e-10}
+      rotation: {x: -0.0000006854534, y: -0.00000016950071, z: 0.000000016996637,
+        w: 1}
+      scale: {x: 1.0000002, y: 1.0000117, z: 1.0000198}
+    - name: mixamorig:RightToe_End_end
+      parentName: mixamorig:RightToe_End
+      position: {x: -0, y: 0.2025454, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Sphere.038
+      parentName: spining_attack_loop(Clone)
+      position: {x: -0.0000000038849874, y: -0.000000022645105, z: 3.0521316e-10}
+      rotation: {x: 0.26835322, y: 0.6542068, z: 0.6542068, w: -0.2683532}
+      scale: {x: 100.00001, y: 99.999985, z: 100}
+    - name: Sphere.023
+      parentName: spining_attack_loop(Clone)
+      position: {x: 0.00000004366785, y: -0.00000009536742, z: -0.00000003721166}
+      rotation: {x: 0.26835322, y: 0.6542068, z: 0.6542068, w: -0.2683532}
+      scale: {x: 100.00001, y: 100.00001, z: 100}
+    - name: Torus.041
+      parentName: spining_attack_loop(Clone)
+      position: {x: 0.069056615, y: 1.4503185, z: 0.069829255}
+      rotation: {x: 0.26835322, y: 0.6542068, z: 0.6542068, w: -0.2683532}
+      scale: {x: 100.00001, y: 100.00001, z: 100}
+    - name: Cylinder.041
+      parentName: spining_attack_loop(Clone)
+      position: {x: -0.000000029519464, y: -0.000000011622906, z: 0.000000002326137}
+      rotation: {x: 0.26835322, y: 0.6542068, z: 0.6542068, w: -0.2683532}
+      scale: {x: 100.00001, y: 100.00001, z: 100}
+    - name: Torus.059
+      parentName: spining_attack_loop(Clone)
+      position: {x: -0.000000029519464, y: -0.000000011622906, z: 0.000000002326137}
+      rotation: {x: 0.26835322, y: 0.6542068, z: 0.6542068, w: -0.2683532}
+      scale: {x: 100.00001, y: 100.00001, z: 100}
+    - name: Cube.023
+      parentName: spining_attack_loop(Clone)
+      position: {x: -0.000000007618605, y: 0.00000006213784, z: 0.000000012328599}
+      rotation: {x: 0.26835322, y: 0.6542068, z: 0.6542068, w: -0.2683532}
+      scale: {x: 100.00001, y: 100.00001, z: 100}
+    - name: Torus.060
+      parentName: spining_attack_loop(Clone)
+      position: {x: -0.000000011318602, y: 0.00000006645918, z: -0.00000000892879}
+      rotation: {x: 0.26835322, y: 0.6542068, z: 0.6542068, w: -0.2683532}
+      scale: {x: 100.00001, y: 100.00001, z: 100}
+    - name: Sphere.024
+      parentName: spining_attack_loop(Clone)
+      position: {x: -0.000000029519464, y: -0.000000011622906, z: 0.000000002326137}
+      rotation: {x: 0.26835322, y: 0.6542068, z: 0.6542068, w: -0.2683532}
+      scale: {x: 100.00001, y: 100.00001, z: 100}
+    - name: Cylinder.042
+      parentName: spining_attack_loop(Clone)
+      position: {x: -0.000000029519464, y: -0.000000011622906, z: 0.000000002326137}
+      rotation: {x: 0.26835322, y: 0.6542068, z: 0.6542068, w: -0.2683532}
+      scale: {x: 100.00001, y: 100.00001, z: 100}
+    - name: Cube.024
+      parentName: spining_attack_loop(Clone)
+      position: {x: -0.000000007618605, y: 0.00000006213784, z: 0.000000012328599}
+      rotation: {x: 0.26835322, y: 0.6542068, z: 0.6542068, w: -0.2683532}
+      scale: {x: 100.00001, y: 100.00001, z: 100}
+    - name: Sphere.039
+      parentName: spining_attack_loop(Clone)
+      position: {x: -0.0000000036646364, y: -0.000000025331973, z: 0.000000008114638}
+      rotation: {x: 0.26835322, y: 0.6542068, z: 0.6542068, w: -0.2683532}
+      scale: {x: 99.999985, y: 100.00001, z: 100}
+    - name: Cylinder.043
+      parentName: spining_attack_loop(Clone)
+      position: {x: -0.000000011318602, y: 0.00000006645918, z: -0.00000000892879}
+      rotation: {x: 0.26835322, y: 0.6542068, z: 0.6542068, w: -0.2683532}
+      scale: {x: 100.00001, y: 100.00001, z: 100}
+    - name: Torus.046
+      parentName: spining_attack_loop(Clone)
+      position: {x: -0.000000029519464, y: -0.000000011622906, z: 0.000000002326137}
+      rotation: {x: 0.26835322, y: 0.6542068, z: 0.6542068, w: -0.2683532}
+      scale: {x: 100.00001, y: 100.00001, z: 100}
+    - name: Torus.061
+      parentName: spining_attack_loop(Clone)
+      position: {x: -0.000000029519464, y: -0.000000011622906, z: 0.000000002326137}
+      rotation: {x: 0.26835322, y: 0.6542068, z: 0.6542068, w: -0.2683532}
+      scale: {x: 100.00001, y: 100.00001, z: 100}
+    - name: Sphere.025
+      parentName: spining_attack_loop(Clone)
+      position: {x: -0.000000029519464, y: -0.000000011622906, z: 0.000000002326137}
+      rotation: {x: 0.26835322, y: 0.6542068, z: 0.6542068, w: -0.2683532}
+      scale: {x: 100.00001, y: 100.00001, z: 100}
+    - name: Cube.025
+      parentName: spining_attack_loop(Clone)
+      position: {x: -0.0000000036646364, y: -0.000000025331973, z: 0.000000008114638}
+      rotation: {x: 0.26835322, y: 0.6542068, z: 0.6542068, w: -0.2683532}
+      scale: {x: 99.999985, y: 100.00001, z: 100}
+    - name: Sphere.026
+      parentName: spining_attack_loop(Clone)
+      position: {x: -0.000000011318602, y: 0.00000006645918, z: -0.00000000892879}
+      rotation: {x: 0.26835322, y: 0.6542068, z: 0.6542068, w: -0.2683532}
+      scale: {x: 100.00001, y: 100.00001, z: 100}
+    - name: Torus.062
+      parentName: spining_attack_loop(Clone)
+      position: {x: -0.000000029519464, y: -0.000000011622906, z: 0.000000002326137}
+      rotation: {x: 0.26835322, y: 0.6542068, z: 0.6542068, w: -0.2683532}
+      scale: {x: 100.00001, y: 100.00001, z: 100}
+    - name: Cylinder.044
+      parentName: spining_attack_loop(Clone)
+      position: {x: -0.000000029519464, y: -0.000000011622906, z: 0.000000002326137}
+      rotation: {x: 0.26835322, y: 0.6542068, z: 0.6542068, w: -0.2683532}
+      scale: {x: 100.00001, y: 100.00001, z: 100}
+    - name: Torus.047
+      parentName: spining_attack_loop(Clone)
+      position: {x: -0.000000029519464, y: -0.000000011622906, z: 0.000000002326137}
+      rotation: {x: 0.26835322, y: 0.6542068, z: 0.6542068, w: -0.2683532}
+      scale: {x: 100.00001, y: 100.00001, z: 100}
+    - name: Cube.026
+      parentName: spining_attack_loop(Clone)
+      position: {x: -0.0000000036646364, y: -0.000000025331973, z: 0.000000008114638}
+      rotation: {x: 0.26835322, y: 0.6542068, z: 0.6542068, w: -0.2683532}
+      scale: {x: 99.999985, y: 100.00001, z: 100}
+    - name: Sphere.027
+      parentName: spining_attack_loop(Clone)
+      position: {x: -0.000000029519464, y: -0.000000011622906, z: 0.000000002326137}
+      rotation: {x: 0.26835322, y: 0.6542068, z: 0.6542068, w: -0.2683532}
+      scale: {x: 100.00001, y: 100.00001, z: 100}
+    - name: Torus.048
+      parentName: spining_attack_loop(Clone)
+      position: {x: -0.000000029519464, y: -0.000000011622906, z: 0.000000002326137}
+      rotation: {x: 0.26835322, y: 0.6542068, z: 0.6542068, w: -0.2683532}
+      scale: {x: 100.00001, y: 100.00001, z: 100}
+    - name: Torus.063
+      parentName: spining_attack_loop(Clone)
+      position: {x: -0.000000029519464, y: -0.000000011622906, z: 0.000000002326137}
+      rotation: {x: 0.26835322, y: 0.6542068, z: 0.6542068, w: -0.2683532}
+      scale: {x: 100.00001, y: 100.00001, z: 100}
+    - name: Cylinder.045
+      parentName: spining_attack_loop(Clone)
+      position: {x: -0.000000029519464, y: -0.000000011622906, z: 0.000000002326137}
+      rotation: {x: 0.26835322, y: 0.6542068, z: 0.6542068, w: -0.2683532}
+      scale: {x: 100.00001, y: 100.00001, z: 100}
+    - name: Cube.027
+      parentName: spining_attack_loop(Clone)
+      position: {x: -0.0000000036646364, y: -0.000000025331973, z: 0.000000008114638}
+      rotation: {x: 0.26835322, y: 0.6542068, z: 0.6542068, w: -0.2683532}
+      scale: {x: 99.999985, y: 100.00001, z: 100}
+    - name: Cube.028
+      parentName: spining_attack_loop(Clone)
+      position: {x: 3.1616762e-17, y: 0, z: -3.1185447e-17}
+      rotation: {x: 0.26835322, y: 0.6542068, z: 0.6542068, w: -0.2683532}
+      scale: {x: 100.00001, y: 100.00001, z: 100}
+    - name: Cylinder.046
+      parentName: spining_attack_loop(Clone)
+      position: {x: 0.000000097315784, y: 0.00000006645918, z: -0.00000011608117}
+      rotation: {x: 0.26835322, y: 0.6542068, z: 0.6542068, w: -0.2683532}
+      scale: {x: 100.00001, y: 100.00001, z: 100}
+    - name: Sphere.028
+      parentName: spining_attack_loop(Clone)
+      position: {x: -0.000000029519464, y: -0.000000011622906, z: 0.000000002326137}
+      rotation: {x: 0.26835322, y: 0.6542068, z: 0.6542068, w: -0.2683532}
+      scale: {x: 100.00001, y: 100.00001, z: 100}
+    - name: Torus.064
+      parentName: spining_attack_loop(Clone)
+      position: {x: -0.000000029519464, y: -0.000000011622906, z: 0.000000002326137}
+      rotation: {x: 0.26835322, y: 0.6542068, z: 0.6542068, w: -0.2683532}
+      scale: {x: 100.00001, y: 100.00001, z: 100}
+    - name: Torus.049
+      parentName: spining_attack_loop(Clone)
+      position: {x: -0.000000029519464, y: -0.000000011622906, z: 0.000000002326137}
+      rotation: {x: 0.26835322, y: 0.6542068, z: 0.6542068, w: -0.2683532}
+      scale: {x: 100.00001, y: 100.00001, z: 100}
+    - name: Cylinder.031
+      parentName: spining_attack_loop(Clone)
+      position: {x: 0.000000056817004, y: -0.00000013649463, z: -0.000000049344223}
+      rotation: {x: 0.26835322, y: 0.6542068, z: 0.6542068, w: -0.2683532}
+      scale: {x: 100.00001, y: 100.00001, z: 100}
+    - name: Cylinder.047
+      parentName: spining_attack_loop(Clone)
+      position: {x: 0.000000097315784, y: 0.00000006645918, z: -0.00000011608117}
+      rotation: {x: 0.26835322, y: 0.6542068, z: 0.6542068, w: -0.2683532}
+      scale: {x: 100.00001, y: 100.00001, z: 100}
+    - name: Sphere.029
+      parentName: spining_attack_loop(Clone)
+      position: {x: -0.000000011318602, y: 0.00000006645918, z: -0.00000000892879}
+      rotation: {x: 0.26835322, y: 0.6542068, z: 0.6542068, w: -0.2683532}
+      scale: {x: 100.00001, y: 100.00001, z: 100}
+    - name: Torus.050
+      parentName: spining_attack_loop(Clone)
+      position: {x: -0.000000011318602, y: 0.00000006645918, z: -0.00000000892879}
+      rotation: {x: 0.26835322, y: 0.6542068, z: 0.6542068, w: -0.2683532}
+      scale: {x: 100.00001, y: 100.00001, z: 100}
+    - name: Torus.065
+      parentName: spining_attack_loop(Clone)
+      position: {x: -0.000000011318602, y: 0.00000006645918, z: -0.00000000892879}
+      rotation: {x: 0.26835322, y: 0.6542068, z: 0.6542068, w: -0.2683532}
+      scale: {x: 100.00001, y: 100.00001, z: 100}
+    - name: Cylinder.050
+      parentName: spining_attack_loop(Clone)
+      position: {x: 0.000000003333118, y: -0.000000010635702, z: 0.000000008146077}
+      rotation: {x: 0.26835322, y: 0.6542068, z: 0.6542068, w: -0.2683532}
+      scale: {x: 100.00001, y: 99.999985, z: 100}
+    - name: Cylinder.033
+      parentName: spining_attack_loop(Clone)
+      position: {x: 0.000000056817004, y: -0.00000013649463, z: -0.000000049344223}
+      rotation: {x: 0.26835322, y: 0.6542068, z: 0.6542068, w: -0.2683532}
+      scale: {x: 100.00001, y: 100.00001, z: 100}
+    - name: Torus.066
+      parentName: spining_attack_loop(Clone)
+      position: {x: -0.000000011318602, y: 0.00000006645918, z: -0.00000000892879}
+      rotation: {x: 0.26835322, y: 0.6542068, z: 0.6542068, w: -0.2683532}
+      scale: {x: 100.00001, y: 100.00001, z: 100}
+    - name: Sphere.030
+      parentName: spining_attack_loop(Clone)
+      position: {x: -0.000000029519464, y: -0.000000011622906, z: 0.000000002326137}
+      rotation: {x: 0.26835322, y: 0.6542068, z: 0.6542068, w: -0.2683532}
+      scale: {x: 100.00001, y: 100.00001, z: 100}
+    - name: Torus.051
+      parentName: spining_attack_loop(Clone)
+      position: {x: -0.000000029519464, y: -0.000000011622906, z: 0.000000002326137}
+      rotation: {x: 0.26835322, y: 0.6542068, z: 0.6542068, w: -0.2683532}
+      scale: {x: 100.00001, y: 100.00001, z: 100}
+    - name: Circle.017
+      parentName: spining_attack_loop(Clone)
+      position: {x: -0.000000007618605, y: 0.00000006213784, z: 0.000000012328599}
+      rotation: {x: 0.26835322, y: 0.6542068, z: 0.6542068, w: -0.2683532}
+      scale: {x: 100.00001, y: 100.00001, z: 100}
+    - name: Cylinder.034
+      parentName: spining_attack_loop(Clone)
+      position: {x: -0.000000029519464, y: -0.000000011622906, z: 0.000000002326137}
+      rotation: {x: 0.26835322, y: 0.6542068, z: 0.6542068, w: -0.2683532}
+      scale: {x: 100.00001, y: 100.00001, z: 100}
+    - name: Torus.067
+      parentName: spining_attack_loop(Clone)
+      position: {x: -0.000000011318602, y: 0.00000006645918, z: -0.00000000892879}
+      rotation: {x: 0.26835322, y: 0.6542068, z: 0.6542068, w: -0.2683532}
+      scale: {x: 100.00001, y: 100.00001, z: 100}
+    - name: Torus.052
+      parentName: spining_attack_loop(Clone)
+      position: {x: -0.000000029519464, y: -0.000000011622906, z: 0.000000002326137}
+      rotation: {x: 0.26835322, y: 0.6542068, z: 0.6542068, w: -0.2683532}
+      scale: {x: 100.00001, y: 100.00001, z: 100}
+    - name: Sphere.031
+      parentName: spining_attack_loop(Clone)
+      position: {x: -0.000000029519464, y: -0.000000011622906, z: 0.000000002326137}
+      rotation: {x: 0.26835322, y: 0.6542068, z: 0.6542068, w: -0.2683532}
+      scale: {x: 100.00001, y: 100.00001, z: 100}
+    - name: Cylinder.051
+      parentName: spining_attack_loop(Clone)
+      position: {x: -0.000000007618605, y: 0.00000006213784, z: 0.000000012328599}
+      rotation: {x: 0.26835322, y: 0.6542068, z: 0.6542068, w: -0.2683532}
+      scale: {x: 100.00001, y: 100.00001, z: 100}
+    - name: Circle.018
+      parentName: spining_attack_loop(Clone)
+      position: {x: -0.0000000036646364, y: -0.000000025331973, z: 0.000000008114638}
+      rotation: {x: 0.26835322, y: 0.6542068, z: 0.6542068, w: -0.2683532}
+      scale: {x: 99.999985, y: 100.00001, z: 100}
+    - name: Cube.017
+      parentName: spining_attack_loop(Clone)
+      position: {x: -0.0000000021101878, y: 0.0000000037625436, z: 4.0698533e-10}
+      rotation: {x: 0.26835322, y: 0.6542068, z: 0.6542068, w: -0.2683532}
+      scale: {x: 100.00001, y: 100.00001, z: 100}
+    - name: Sphere.032
+      parentName: spining_attack_loop(Clone)
+      position: {x: -0.000000011318602, y: 0.00000006645918, z: -0.00000000892879}
+      rotation: {x: 0.26835322, y: 0.6542068, z: 0.6542068, w: -0.2683532}
+      scale: {x: 100.00001, y: 100.00001, z: 100}
+    - name: Torus.068
+      parentName: spining_attack_loop(Clone)
+      position: {x: -0.000000011318602, y: 0.00000006645918, z: -0.00000000892879}
+      rotation: {x: 0.26835322, y: 0.6542068, z: 0.6542068, w: -0.2683532}
+      scale: {x: 100.00001, y: 100.00001, z: 100}
+    - name: Cylinder.035
+      parentName: spining_attack_loop(Clone)
+      position: {x: -0.000000029519464, y: -0.000000011622906, z: 0.000000002326137}
+      rotation: {x: 0.26835322, y: 0.6542068, z: 0.6542068, w: -0.2683532}
+      scale: {x: 100.00001, y: 100.00001, z: 100}
+    - name: Torus.053
+      parentName: spining_attack_loop(Clone)
+      position: {x: -0.000000029519464, y: -0.000000011622906, z: 0.000000002326137}
+      rotation: {x: 0.26835322, y: 0.6542068, z: 0.6542068, w: -0.2683532}
+      scale: {x: 100.00001, y: 100.00001, z: 100}
+    - name: Cylinder.052
+      parentName: spining_attack_loop(Clone)
+      position: {x: -0.0000000036646364, y: -0.000000025331973, z: 0.000000008114638}
+      rotation: {x: 0.26835322, y: 0.6542068, z: 0.6542068, w: -0.2683532}
+      scale: {x: 99.999985, y: 100.00001, z: 100}
+    - name: Torus.069
+      parentName: spining_attack_loop(Clone)
+      position: {x: -0.000000011318602, y: 0.00000006645918, z: -0.00000000892879}
+      rotation: {x: 0.26835322, y: 0.6542068, z: 0.6542068, w: -0.2683532}
+      scale: {x: 100.00001, y: 100.00001, z: 100}
+    - name: Cube.018
+      parentName: spining_attack_loop(Clone)
+      position: {x: -0.0000000038849874, y: -0.000000022645105, z: 3.0521316e-10}
+      rotation: {x: 0.26835322, y: 0.6542068, z: 0.6542068, w: -0.2683532}
+      scale: {x: 100.00001, y: 99.999985, z: 100}
+    - name: Sphere.033
+      parentName: spining_attack_loop(Clone)
+      position: {x: -0.000000029519464, y: -0.000000011622906, z: 0.000000002326137}
+      rotation: {x: 0.26835322, y: 0.6542068, z: 0.6542068, w: -0.2683532}
+      scale: {x: 100.00001, y: 100.00001, z: 100}
+    - name: Cylinder.036
+      parentName: spining_attack_loop(Clone)
+      position: {x: -0.000000029519464, y: -0.000000011622906, z: 0.000000002326137}
+      rotation: {x: 0.26835322, y: 0.6542068, z: 0.6542068, w: -0.2683532}
+      scale: {x: 100.00001, y: 100.00001, z: 100}
+    - name: Torus.054
+      parentName: spining_attack_loop(Clone)
+      position: {x: -0.000000029519464, y: -0.000000011622906, z: 0.000000002326137}
+      rotation: {x: 0.26835322, y: 0.6542068, z: 0.6542068, w: -0.2683532}
+      scale: {x: 100.00001, y: 100.00001, z: 100}
+    - name: Cylinder.054
+      parentName: spining_attack_loop(Clone)
+      position: {x: -0.0000000036646364, y: -0.000000025331973, z: 0.000000008114638}
+      rotation: {x: 0.26835322, y: 0.6542068, z: 0.6542068, w: -0.2683532}
+      scale: {x: 99.999985, y: 100.00001, z: 100}
+    - name: Cylinder.057
+      parentName: spining_attack_loop(Clone)
+      position: {x: 0.0000000038717056, y: 0.000000099232416, z: 0.0000000039252543}
+      rotation: {x: 0.26835322, y: 0.6542068, z: 0.6542068, w: -0.2683532}
+      scale: {x: 100.00001, y: 100.00001, z: 100}
+    - name: Cube.019
+      parentName: spining_attack_loop(Clone)
+      position: {x: -0.000000035252008, y: 0.00000007390975, z: -0.00000002215899}
+      rotation: {x: 0.26835322, y: 0.6542068, z: 0.6542068, w: -0.2683532}
+      scale: {x: 100.00001, y: 100.00001, z: 100}
+    - name: Cylinder.037
+      parentName: spining_attack_loop(Clone)
+      position: {x: -0.000000029519464, y: -0.000000011622906, z: 0.000000002326137}
+      rotation: {x: 0.26835322, y: 0.6542068, z: 0.6542068, w: -0.2683532}
+      scale: {x: 100.00001, y: 100.00001, z: 100}
+    - name: Torus.055
+      parentName: spining_attack_loop(Clone)
+      position: {x: -0.000000011318602, y: 0.00000006645918, z: -0.00000000892879}
+      rotation: {x: 0.26835322, y: 0.6542068, z: 0.6542068, w: -0.2683532}
+      scale: {x: 100.00001, y: 100.00001, z: 100}
+    - name: Torus.070
+      parentName: spining_attack_loop(Clone)
+      position: {x: 0.000000097315784, y: 0.00000006645918, z: -0.00000011608117}
+      rotation: {x: 0.26835322, y: 0.6542068, z: 0.6542068, w: -0.2683532}
+      scale: {x: 100.00001, y: 100.00001, z: 100}
+    - name: Sphere.034
+      parentName: spining_attack_loop(Clone)
+      position: {x: -0.000000029519464, y: -0.000000011622906, z: 0.000000002326137}
+      rotation: {x: 0.26835322, y: 0.6542068, z: 0.6542068, w: -0.2683532}
+      scale: {x: 100.00001, y: 100.00001, z: 100}
+    - name: Cylinder.058
+      parentName: spining_attack_loop(Clone)
+      position: {x: 0.00000003239933, y: -0.000000033834947, z: -0.000000022748056}
+      rotation: {x: 0.26835322, y: 0.6542068, z: 0.6542068, w: -0.2683532}
+      scale: {x: 100.00001, y: 100.00001, z: 100}
+    - name: Cube.020
+      parentName: spining_attack_loop(Clone)
+      position: {x: -0.000000011318602, y: 0.00000006645918, z: -0.00000000892879}
+      rotation: {x: 0.26835322, y: 0.6542068, z: 0.6542068, w: -0.2683532}
+      scale: {x: 100.00001, y: 100.00001, z: 100}
+    - name: Sphere.035
+      parentName: spining_attack_loop(Clone)
+      position: {x: -0.000000011318602, y: 0.00000006645918, z: -0.00000000892879}
+      rotation: {x: 0.26835322, y: 0.6542068, z: 0.6542068, w: -0.2683532}
+      scale: {x: 100.00001, y: 100.00001, z: 100}
+    - name: Torus.071
+      parentName: spining_attack_loop(Clone)
+      position: {x: 0.000000097315784, y: 0.00000006645918, z: -0.00000011608117}
+      rotation: {x: 0.26835322, y: 0.6542068, z: 0.6542068, w: -0.2683532}
+      scale: {x: 100.00001, y: 100.00001, z: 100}
+    - name: Torus.056
+      parentName: spining_attack_loop(Clone)
+      position: {x: -0.000000029519464, y: -0.000000011622906, z: 0.000000002326137}
+      rotation: {x: 0.26835322, y: 0.6542068, z: 0.6542068, w: -0.2683532}
+      scale: {x: 100.00001, y: 100.00001, z: 100}
+    - name: Cylinder.038
+      parentName: spining_attack_loop(Clone)
+      position: {x: -0.000000029519464, y: -0.000000011622906, z: 0.000000002326137}
+      rotation: {x: 0.26835322, y: 0.6542068, z: 0.6542068, w: -0.2683532}
+      scale: {x: 100.00001, y: 100.00001, z: 100}
+    - name: Sphere.021
+      parentName: spining_attack_loop(Clone)
+      position: {x: -0.0000000021101878, y: 0.0000000037625436, z: 4.0698533e-10}
+      rotation: {x: 0.26835322, y: 0.6542068, z: 0.6542068, w: -0.2683532}
+      scale: {x: 100.00001, y: 100.00001, z: 100}
+    - name: Sphere.036
+      parentName: spining_attack_loop(Clone)
+      position: {x: 0.000000097315784, y: 0.00000006645918, z: -0.00000011608117}
+      rotation: {x: 0.26835322, y: 0.6542068, z: 0.6542068, w: -0.2683532}
+      scale: {x: 100.00001, y: 100.00001, z: 100}
+    - name: Torus.072
+      parentName: spining_attack_loop(Clone)
+      position: {x: 0.000000097315784, y: 0.00000006645918, z: -0.00000011608117}
+      rotation: {x: 0.26835322, y: 0.6542068, z: 0.6542068, w: -0.2683532}
+      scale: {x: 100.00001, y: 100.00001, z: 100}
+    - name: Torus.057
+      parentName: spining_attack_loop(Clone)
+      position: {x: -0.000000029519464, y: -0.000000011622906, z: 0.000000002326137}
+      rotation: {x: 0.26835322, y: 0.6542068, z: 0.6542068, w: -0.2683532}
+      scale: {x: 100.00001, y: 100.00001, z: 100}
+    - name: Cylinder.039
+      parentName: spining_attack_loop(Clone)
+      position: {x: -0.000000029519464, y: -0.000000011622906, z: 0.000000002326137}
+      rotation: {x: 0.26835322, y: 0.6542068, z: 0.6542068, w: -0.2683532}
+      scale: {x: 100.00001, y: 100.00001, z: 100}
+    - name: Cube.021
+      parentName: spining_attack_loop(Clone)
+      position: {x: -0.0000000036646364, y: -0.000000025331973, z: 0.000000008114638}
+      rotation: {x: 0.26835322, y: 0.6542068, z: 0.6542068, w: -0.2683532}
+      scale: {x: 99.999985, y: 100.00001, z: 100}
+    - name: Cube.022
+      parentName: spining_attack_loop(Clone)
+      position: {x: -0.000000007618605, y: 0.00000006213784, z: 0.000000012328599}
+      rotation: {x: 0.26835322, y: 0.6542068, z: 0.6542068, w: -0.2683532}
+      scale: {x: 100.00001, y: 100.00001, z: 100}
+    - name: Sphere.022
+      parentName: spining_attack_loop(Clone)
+      position: {x: 0.000000056817004, y: -0.00000013649463, z: -0.000000049344223}
+      rotation: {x: 0.26835322, y: 0.6542068, z: 0.6542068, w: -0.2683532}
+      scale: {x: 100.00001, y: 100.00001, z: 100}
+    - name: Cylinder.040
+      parentName: spining_attack_loop(Clone)
+      position: {x: -0.000000011318602, y: 0.00000006645918, z: -0.00000000892879}
+      rotation: {x: 0.26835322, y: 0.6542068, z: 0.6542068, w: -0.2683532}
+      scale: {x: 100.00001, y: 100.00001, z: 100}
+    - name: Sphere.037
+      parentName: spining_attack_loop(Clone)
+      position: {x: 0.000000097315784, y: 0.00000006645918, z: -0.00000011608117}
+      rotation: {x: 0.26835322, y: 0.6542068, z: 0.6542068, w: -0.2683532}
+      scale: {x: 100.00001, y: 100.00001, z: 100}
+    - name: Torus.073
+      parentName: spining_attack_loop(Clone)
+      position: {x: 0.000000097315784, y: 0.00000006645918, z: -0.00000011608117}
+      rotation: {x: 0.26835322, y: 0.6542068, z: 0.6542068, w: -0.2683532}
+      scale: {x: 100.00001, y: 100.00001, z: 100}
+    - name: Torus.058
+      parentName: spining_attack_loop(Clone)
+      position: {x: -0.000000029519464, y: -0.000000011622906, z: 0.000000002326137}
+      rotation: {x: 0.26835322, y: 0.6542068, z: 0.6542068, w: -0.2683532}
+      scale: {x: 100.00001, y: 100.00001, z: 100}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 3
+  humanoidOversampling: 1
+  avatarSetup: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
