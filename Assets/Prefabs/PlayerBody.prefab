@@ -9,12 +9,13 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2711837347445825358}
+  - component: {fileID: -3169568952733483196}
   - component: {fileID: 2711837347445825359}
+  - component: {fileID: 2126446348035103236}
+  - component: {fileID: 329362943352176472}
   - component: {fileID: 2711837347445825355}
   - component: {fileID: 2711837347445825356}
   - component: {fileID: 3455911077107966092}
-  - component: {fileID: 329362943352176472}
-  - component: {fileID: 2126446348035103236}
   m_Layer: 8
   m_Name: PlayerBody
   m_TagString: Player
@@ -30,13 +31,25 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2711837347445825354}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.2399998, z: -0.0019117594}
+  m_LocalPosition: {x: 0, y: 1.25, z: 0}
   m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_Children:
   - {fileID: 228994523544146702}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-3169568952733483196
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2711837347445825354}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48f9077c364029548b76ab49cbf9c72b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &2711837347445825359
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -57,7 +70,45 @@ MonoBehaviour:
   secondWeaponAOERadius: 4
   thirdWeaponAOERadius: 4
   fourthWeaponAOERadius: 4
-  cam: {fileID: 0}
+  secondWeaponStateScrap: 70
+  thirdWeaponStateScrap: 140
+  fourthWeaponStateScrap: 210
+  aoeReady: 0
+  aoeCooldown: 2
+  aoeCooldownCurrent: 0
+  aoeSlider: {fileID: 0}
+  firstWeaponPushPower: 0
+  secondWeaponPushPower: 0
+  thirdWeaponPushPower: 0
+  fourthWeaponPushPower: 0
+  scrapManager: {fileID: 0}
+--- !u!95 &2126446348035103236
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2711837347445825354}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: 862869fa38098984481fca211b7f2771, type: 3}
+  m_Controller: {fileID: 9100000, guid: efea6fb0b68c65f488dd710535a19af7, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!81 &329362943352176472
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2711837347445825354}
+  m_Enabled: 1
 --- !u!136 &2711837347445825355
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -105,35 +156,10 @@ MonoBehaviour:
   maxPieces: 5
   minPieces: 10
   yOffset: 3
-  shoudDropScrap: 1
+  shouldDropScrap: 0
   scrapToDrop: {fileID: 0}
---- !u!81 &329362943352176472
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2711837347445825354}
-  m_Enabled: 1
---- !u!95 &2126446348035103236
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2711837347445825354}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 862869fa38098984481fca211b7f2771, type: 3}
-  m_Controller: {fileID: 9100000, guid: efea6fb0b68c65f488dd710535a19af7, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  itemDropPercent: 50
+  itemsToDrop: []
 --- !u!1001 &335294091747570917
 PrefabInstance:
   m_ObjectHideFlags: 0

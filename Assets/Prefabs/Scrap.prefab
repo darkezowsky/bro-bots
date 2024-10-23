@@ -155,7 +155,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d994e92bbdb831e42af5ceafb1f87402, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attractorSpeed: 10
+  attractorSpeed: 25
 --- !u!135 &1461816976703990159
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -167,7 +167,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.055
+  m_Radius: 0.075
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &956263476010357366
 GameObject:
@@ -324,7 +324,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d994e92bbdb831e42af5ceafb1f87402, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attractorSpeed: 10
+  attractorSpeed: 25
 --- !u!135 &1956232309977620549
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -336,7 +336,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.055
+  m_Radius: 0.075
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1954600404946459700
 GameObject:
@@ -493,7 +493,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d994e92bbdb831e42af5ceafb1f87402, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attractorSpeed: 10
+  attractorSpeed: 25
 --- !u!135 &4026146806652503698
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -505,7 +505,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.055
+  m_Radius: 0.075
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &4179104520593188124
 GameObject:
@@ -712,7 +712,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d994e92bbdb831e42af5ceafb1f87402, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attractorSpeed: 10
+  attractorSpeed: 25
 --- !u!135 &1456811679960500867
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -724,7 +724,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.055
+  m_Radius: 0.075
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &7232793417366300743
 GameObject:
@@ -881,7 +881,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d994e92bbdb831e42af5ceafb1f87402, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attractorSpeed: 10
+  attractorSpeed: 25
 --- !u!135 &7841014110330160812
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -893,5 +893,5 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.055
+  m_Radius: 0.075
   m_Center: {x: 0, y: 0, z: 0}

@@ -3,15 +3,20 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public enum ObstacleType { Lasers, Saw, Oil, Lava }
+public enum RotationAxis { X, Y, Z } // Enum do wyboru osi obrotu
 
 public class ObstacleManager : MonoBehaviour
 {
     [SerializeField] private ObstacleType obstacleType;
     [SerializeField] private ScrapManager scrapManager;
+
     [Header("Saw")]
-    [SerializeField] private Transform lookAt;
-    [SerializeField] private float rotateSawSpeed = 10;
+    [SerializeField] private Transform saw; // Obiekt piły do obracania
+    [SerializeField] private RotationAxis rotationAxis; // Wybór osi obrotu
+    float speedMultiplier = 20f; // Mnożnik prędkości
+    [SerializeField, Range(-10, 10)] private float rotateSawSpeed = 10;
     [SerializeField] private int sawPower = 10;
+
     [Header("Laser")]
     [SerializeField] private LineRenderer lineRenderer;
     [SerializeField] private Transform startLaserPos;
@@ -46,16 +51,27 @@ public class ObstacleManager : MonoBehaviour
 
     private void Update()
     {
-        if (obstacleType == ObstacleType.Saw)
+        if (obstacleType == ObstacleType.Saw && saw != null)
         {
-            transform.Rotate(Vector3.right * rotateSawSpeed);
+            switch (rotationAxis)
+            {
+                case RotationAxis.X:
+                    saw.Rotate(Vector3.up * rotateSawSpeed * Time.deltaTime * speedMultiplier);
+                    break;
+                case RotationAxis.Y:
+                    saw.Rotate(Vector3.right * rotateSawSpeed * Time.deltaTime * speedMultiplier);
+                    break;
+                case RotationAxis.Z:
+                    saw.Rotate(Vector3.forward * rotateSawSpeed * Time.deltaTime * speedMultiplier);
+                    break;
+            }
 
             if (hit)
             {
                 float step = cogsSpeed * Time.deltaTime;
                 player.position = Vector3.MoveTowards(player.position, targetPos, step);
 
-                if (Vector3.Distance(player.gameObject.transform.position, targetPos) < 0.1)
+                if (Vector3.Distance(player.position, targetPos) < 0.1f)
                 {
                     player.GetComponent<PlayerController>().enabled = true;
                     hit = false;
@@ -117,7 +133,6 @@ public class ObstacleManager : MonoBehaviour
             {
                 if (collision.gameObject.tag == "Enemy")
                 {
-                    Debug.Log("adssada");
                     collision.gameObject.GetComponent<EnemyManager>().DestroyEnemy("Obstacle");
                 }
                 else if (collision.gameObject.tag == "Player")
@@ -137,7 +152,7 @@ public class ObstacleManager : MonoBehaviour
     {
         player.GetComponent<PlayerController>().enabled = false;
 
-        Vector3 pos = lookAt.forward * cogsPower;
+        Vector3 pos = saw.forward * cogsPower;
         pos.y = 0;
 
         targetPos = targetTransorm.position + pos;
@@ -182,7 +197,7 @@ public class ObstacleManager : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
         laserHit = true;
     }
-    
+
     private IEnumerator InitialTime()
     {
         yield return new WaitForSeconds(initialTime);

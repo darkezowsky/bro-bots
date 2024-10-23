@@ -6,44 +6,91 @@ using TMPro;
 
 public class LosePanel : MonoBehaviour
 {
-    [SerializeField] private GameObject reasumeButton;
-    [SerializeField] private TextMeshProUGUI text; 
+    [SerializeField] private GameObject reasumeButton; // przycisk wznowienia gry
+    [SerializeField] private TextMeshProUGUI text; // tekst wygranej/przegranej
+    [SerializeField] private Animator animator; // animator do zarządzania animacjami
 
-    private Animator animator;
     private AudioManager audioManager;
+    private bool isGameOver = false; // zmienna śledząca stan gry
 
     private void Start()
     {
+        // Znajdź AudioManager w scenie
         audioManager = FindObjectOfType<AudioManager>();
-        audioManager.Play("BGMgame");
+
+        // Sprawdź, czy AudioManager został znaleziony
+        if (audioManager != null)
+        {
+            audioManager.Play("BGMgame");
+        }
+        else
+        {
+            Debug.LogError("AudioManager nie został znaleziony w scenie!");
+        }
+
+        // Ukryj przycisk wznowienia gry na starcie
         reasumeButton.SetActive(false);
-        animator = GetComponent<Animator>();
+
+        // Upewnij się, że animator jest przypisany
+        if (animator == null)
+        {
+            animator = GetComponent<Animator>();
+            if (animator == null)
+            {
+                Debug.LogError("Animator nie został przypisany do LosePanel.");
+            }
+        }
+
+        // Na starcie ukryj panel końcowy (EndPanel)
+        animator.SetBool("isGameOver", false);
     }
 
     public void OpenPanel(bool win)
     {
+        // Ustaw stan gry na "game over"
+        isGameOver = true;
+
+        // Uaktywnij animację otwierania panelu
+        animator.SetBool("isGameOver", true);
+
+        // Ustawianie panelu w zależności od wyniku
         if (!win)
         {
             reasumeButton.SetActive(true);
-            text.SetText("Lose");
-            audioManager.Play("PlayersDeath");
+            //text.SetText("Lose"); //Tymczasowe wyłączenie napisu. Zastąpione tekstem z Canvas/Animator
+            // Sprawdź, czy AudioManager istnieje przed odtwarzaniem dźwięku
+            if (audioManager != null)
+            {
+                audioManager.Play("PlayersDeath");
+            }
         }
         else
-        {  
+        {
             text.SetText("Win");
         }
-        animator.SetTrigger("Start");
     }
 
     public void LoadScene(int sceneIndex)
     {
-        audioManager.Play("Click");
-
-        if (sceneIndex == 0)
+        // Sprawdź, czy AudioManager istnieje przed odtwarzaniem dźwięku
+        if (audioManager != null)
         {
-            audioManager.Stop("BGMgame");
+            audioManager.Play("Click");
+
+            if (sceneIndex == 0)
+            {
+                audioManager.Stop("BGMgame");
+            }
         }
 
+        // Załaduj scenę o podanym indeksie
         SceneManager.LoadScene(sceneIndex);
+    }
+
+    public void ClosePanel()
+    {
+        // Ukryj panel końcowy, ustawiając stan gry na "nie game over"
+        isGameOver = false;
+        animator.SetBool("isGameOver", false);
     }
 }

@@ -495,7 +495,6 @@ GameObject:
   - component: {fileID: 6133821701202967095}
   - component: {fileID: 6133821701202967091}
   - component: {fileID: 6133821701202967092}
-  - component: {fileID: 959459883}
   - component: {fileID: 959459882}
   - component: {fileID: 1299110307541635005}
   m_Layer: 8
@@ -513,7 +512,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6133821701202967090}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.22, z: 0}
+  m_LocalPosition: {x: 0, y: 1.25, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 8590368684331111034}
@@ -554,7 +553,6 @@ MonoBehaviour:
   secondWeaponAOERadius: 4
   thirdWeaponAOERadius: 4
   fourthWeaponAOERadius: 4
-  firstWeaponStateScrap: 0
   secondWeaponStateScrap: 70
   thirdWeaponStateScrap: 140
   fourthWeaponStateScrap: 210
@@ -562,8 +560,11 @@ MonoBehaviour:
   aoeCooldown: 3
   aoeCooldownCurrent: 3
   aoeSlider: {fileID: 2126618656}
+  firstWeaponPushPower: 0
+  secondWeaponPushPower: 0
+  thirdWeaponPushPower: 0
+  fourthWeaponPushPower: 0
   scrapManager: {fileID: 0}
-  characterAnim: {fileID: 2020093252}
 --- !u!136 &6133821701202967091
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -594,25 +595,6 @@ Rigidbody:
   m_Interpolate: 1
   m_Constraints: 112
   m_CollisionDetection: 0
---- !u!114 &959459883
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6133821701202967090}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c08ff0faa398a4442ad8733a153491fa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scrapMetal:
-  - {fileID: 4179104520593188124, guid: 956ed57fc1fa1df41819f74022cfe077, type: 3}
-  maxPieces: 50
-  minPieces: 25
-  yOffset: 3
-  shoudDropScrap: 0
-  scrapToDrop: {fileID: 0}
 --- !u!81 &959459882
 AudioListener:
   m_ObjectHideFlags: 0
@@ -638,8 +620,10 @@ MonoBehaviour:
   maxPieces: 50
   minPieces: 25
   yOffset: 3
-  shoudDropScrap: 0
+  shouldDropScrap: 0
   scrapToDrop: {fileID: 0}
+  itemDropPercent: 50
+  itemsToDrop: []
 --- !u!1 &8123886684509539444
 GameObject:
   m_ObjectHideFlags: 0

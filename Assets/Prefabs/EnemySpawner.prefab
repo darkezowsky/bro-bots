@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 9057405261720426612}
   - component: {fileID: 9057405261720426613}
   m_Layer: 0
-  m_Name: Spawner
+  m_Name: EnemySpawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -43,9 +43,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 308f888943fb79542bb69c46f578ed9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  secondsToSpownEnemy: 2
+  secondsToSpawnEnemy: 2
   maxSpawnedEnemies: 3
-  player: {fileID: 0}
+  spawnRadius: 2
+  enemiesPerSpawn: 1
+  player: {fileID: 3838800343841726964, guid: dab18afd7c9b32041a1e8801de295bcf, type: 3}
   enemyPrefab: {fileID: 3179030129524509667, guid: 7562b921055c81c4ab5cecea714159bf,
     type: 3}
-  numberOfSpownedEnemies: 0
+  scrapManager: {fileID: 0}
+  numberOfSpawnedEnemies: 0

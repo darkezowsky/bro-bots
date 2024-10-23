@@ -29,52 +29,94 @@ public class EnemyMovement : MonoBehaviour
 
     private void Start()
     {
+        // Znajdź AudioManager i EnemyManager, upewnij się, że nie są null
         audioManager = FindObjectOfType<AudioManager>();
+        if (audioManager == null)
+        {
+            Debug.LogError("Nie znaleziono AudioManager w scenie.");
+        }
+
         enemyManager = GetComponent<EnemyManager>();
+        if (enemyManager == null)
+        {
+            Debug.LogError("Brak komponentu EnemyManager na obiekcie: " + gameObject.name);
+        }
 
-        SelectPath();
+        // Znajdź komponent NavMeshAgent
         meshAgent = GetComponent<NavMeshAgent>();
-        playerScrap = player.GetComponent<ScrapExplosion>();
+        if (meshAgent == null)
+        {
+            Debug.LogError("Brak komponentu NavMeshAgent na obiekcie: " + gameObject.name);
+        }
 
+        // Sprawdź, czy player został przypisany
+        if (player == null)
+        {
+            Debug.LogError("Player nie został przypisany do EnemyMovement.");
+        }
+        else
+        {
+            playerScrap = player.GetComponent<ScrapExplosion>();
+            if (playerScrap == null)
+            {
+                Debug.LogWarning("Nie znaleziono ScrapExplosion na graczu: " + player.name);
+            }
+        }
+
+        // Sprawdź ScrapManager
+        if (scrapManager == null)
+        {
+            Debug.LogWarning("ScrapManager nie został przypisany do EnemyMovement.");
+        }
+
+        // Wybierz pierwszą ścieżkę
+        SelectPath();
+
+        // Rozpocznij coroutine do lokalizowania gracza
         StartCoroutine(FindPlayerCoroutine());
     }
 
     void Update()
     {
-        float distance = Vector3.Distance(transform.position, player.position);
+        // Sprawdź odległość do gracza
+        if (player != null)
+        {
+            float distance = Vector3.Distance(transform.position, player.position);
 
-        if (distance > 2.1f && meshAgent.enabled)
-        {
-            meshAgent.SetDestination(currentPath);
-            atack = false;
-            atackIsActive = false;
-        }
-        else if (distance <= 2.1f && meshAgent.enabled)
-        {
-            atack = true;
-            if (!atackIsActive)
+            if (distance > atackDistance && meshAgent.enabled)
             {
-                atackIsActive = true;
-                StartCoroutine(AtackPlayerCourutine());
+                meshAgent.SetDestination(currentPath);
+                atack = false;
+                atackIsActive = false;
             }
-        }
-
-        if (hit)
-        {
-            float step = pushSpeed * Time.deltaTime;
-            transform.position = Vector3.MoveTowards(transform.position, targetPos, step);
-
-            if (Vector3.Distance(transform.position, targetPos) < 0.1)
+            else if (distance <= atackDistance && meshAgent.enabled)
             {
-                hit = false;
-                meshAgent.enabled = true;
+                atack = true;
+                if (!atackIsActive)
+                {
+                    atackIsActive = true;
+                    StartCoroutine(AtackPlayerCourutine());
+                }
+            }
+
+            if (hit)
+            {
+                float step = pushSpeed * Time.deltaTime;
+                transform.position = Vector3.MoveTowards(transform.position, targetPos, step);
+
+                if (Vector3.Distance(transform.position, targetPos) < 0.1)
+                {
+                    hit = false;
+                    meshAgent.enabled = true;
+                }
             }
         }
     }
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.tag == "Wall")
+        // Użyj CompareTag, aby porównać tagi
+        if (collision.gameObject.CompareTag("Wall"))
         {
             hit = false;
             meshAgent.enabled = true;
@@ -83,7 +125,14 @@ public class EnemyMovement : MonoBehaviour
 
     private void SelectPath()
     {
-        currentPath = player.position;
+        if (player != null)
+        {
+            currentPath = player.position;
+        }
+        else
+        {
+            Debug.LogWarning("Nie można ustawić ścieżki, ponieważ player jest null.");
+        }
     }
 
     private IEnumerator FindPlayerCoroutine()
@@ -97,22 +146,34 @@ public class EnemyMovement : MonoBehaviour
 
     public void Push()
     {
-        meshAgent.enabled = false;
-        transform.LookAt(player);
-        targetPos = transform.position - transform.forward * pushPower;
-        hit = true;
-        audioManager.Play("EnemiesPush");
+        if (player != null)
+        {
+            meshAgent.enabled = false;
+            transform.LookAt(player);
+            targetPos = transform.position - transform.forward * pushPower;
+            hit = true;
+
+            if (audioManager != null)
+            {
+                audioManager.Play("EnemiesPush");
+            }
+        }
     }
 
     private IEnumerator AtackPlayerCourutine()
     {
-        while (atack)
+        while (atack && playerScrap != null && scrapManager != null)
         {
+            // Wyrzuć scrap i odejmij wartość ataku
             playerScrap.DropScrap();
             scrapManager.SubtractScraps(atackValue);
-            audioManager.Play("EnemyAttack");
+
+            if (audioManager != null)
+            {
+                audioManager.Play("EnemyAttack");
+            }
+
             yield return new WaitForSeconds(atackDelay);
         }
-        yield return null;
     }
 }

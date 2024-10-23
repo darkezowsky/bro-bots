@@ -1,35 +1,36 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Lifetimer : MonoBehaviour
 {
-    [SerializeField] private float speed = 10;
-    [SerializeField] private float lifeTime = 2;
+    [SerializeField] private float speed = 10f; // Prędkość zmniejszania
+    [SerializeField] private float lifeTime = 2f; // Czas życia obiektu
 
-    private bool start;
+    private bool startScaling;
 
     private void Awake()
     {
-        StartCoroutine(ScaleAndDestroyCorutine()); 
+        StartCoroutine(ScaleAndDestroyCoroutine());
     }
 
     private void Update()
     {
-        if (start)
+        if (startScaling)
         {
+            // Lerp do skali zero
             transform.localScale = Vector3.Lerp(transform.localScale, Vector3.zero, Time.deltaTime * speed);
 
-            if (transform.localScale.x < 0.1)
+            // Sprawdzenie, czy skala jest wystarczająco mała, aby zniszczyć obiekt
+            if (transform.localScale.magnitude < 0.1f)
             {
-                Destroy(this.gameObject);
+                Destroy(gameObject);
             }
         }
     }
 
-    private IEnumerator ScaleAndDestroyCorutine()
+    private IEnumerator ScaleAndDestroyCoroutine()
     {
-        yield return new WaitForSeconds(lifeTime);
-        start = true;
+        yield return new WaitForSeconds(lifeTime); // Czekaj przez określony czas
+        startScaling = true; // Rozpocznij zmniejszanie
     }
 }

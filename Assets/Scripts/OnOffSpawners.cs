@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class OnOffSpawners : MonoBehaviour
 {
-    [SerializeField] private GameObject[] spowners;
-    [SerializeField] private GameObject[] laserWall;
-    [SerializeField] private bool spawnersAreOff;
+    [SerializeField] private GameObject[] spawners;
+    [SerializeField] private GameObject[] laserWalls;
+    [SerializeField] private bool spawnersAreActive = true;
 
     private void Awake()
     {
@@ -15,41 +15,33 @@ public class OnOffSpawners : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Player")
+        if (other.CompareTag("Player"))
         {
-            Setup();
+            ToggleSpawners();
         }
     }
 
     private void Setup()
     {
-        if (spawnersAreOff)
+        // Ustawienie początkowego stanu dla laserowych ścian i spawnerów
+        SetActiveState(laserWalls, !spawnersAreActive);
+        SetActiveState(spawners, spawnersAreActive);
+    }
+
+    private void ToggleSpawners()
+    {
+        spawnersAreActive = !spawnersAreActive;  // Przełącz stan
+
+        // Ustawienie stanu dla laserowych ścian i spawnerów
+        SetActiveState(laserWalls, !spawnersAreActive);
+        SetActiveState(spawners, spawnersAreActive);
+    }
+
+    private void SetActiveState(GameObject[] objects, bool state)
+    {
+        foreach (var item in objects)
         {
-            spawnersAreOff = true;
-           
-            foreach (var item in laserWall)
-            {
-                item.SetActive(true);
-            }
-
-            foreach (var item in spowners)
-            {
-                item.SetActive(true);
-            }
-        }
-        else
-        {
-            spawnersAreOff = false;
-
-            foreach (var item in laserWall)
-            {
-                item.SetActive(false);
-            }
-
-            foreach (var item in spowners)
-            {
-                item.SetActive(false);
-            }
+            item.SetActive(state);
         }
     }
 }

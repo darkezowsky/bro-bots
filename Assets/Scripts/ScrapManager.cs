@@ -10,21 +10,23 @@ public class ScrapManager : MonoBehaviour
     [Space(10)]
     [SerializeField] private Slider lvlUpSlider;
     [SerializeField] private TextMeshProUGUI sliderValuesText;
-    [SerializeField] [Tooltip("To tak bydzie wyglądać: textInSlider 5/10")] private string textInSlider;
+    [SerializeField]
+    [Tooltip("To tak będzie wyglądać: textInSlider 5/10")]
+    private string textInSlider;
     [Space(10)]
     [SerializeField] private int[] valuesToLvlUp;
     [SerializeField] private LosePanel losePanel;
-    [SerializeField] private ScrapExplosion player;
-
+    [SerializeField] private ScrapExplosion scrapExplosion; // Zmieniona nazwa
     public int scrapNumber = 0;
     private int points = 0;
-    private int actualAtackState = 0;
+    private int actualAttackState = 0; // Poprawiona literówka
     private AudioManager audioManager;
+    private bool isPlayerDead = false; // Flaga sprawdzająca, czy gracz już zginął
 
     private void Awake()
     {
         SetScrapValueText();
-        SetSlider(actualAtackState, 0);
+        SetSlider(actualAttackState, 0);
     }
 
     private void Start()
@@ -41,7 +43,7 @@ public class ScrapManager : MonoBehaviour
     private void SetScrapValueText()
     {
         scrapCounter.SetText(points.ToString());
-        sliderValuesText.SetText($"{textInSlider} {lvlUpSlider.value}/{valuesToLvlUp[actualAtackState]}");
+        sliderValuesText.SetText($"{textInSlider} {lvlUpSlider.value}/{valuesToLvlUp[actualAttackState]}");
     }
 
     private void SetSlider(int indexOfLvl, int scraps)
@@ -50,13 +52,13 @@ public class ScrapManager : MonoBehaviour
         lvlUpSlider.maxValue = valuesToLvlUp[indexOfLvl];
     }
 
-    private IEnumerator LoseCutdownCorutine()
+    private IEnumerator LoseCutdownCoroutine() // Poprawiona literówka
     {
         while (points > 0)
         {
             yield return new WaitForSeconds(0.4f);
             points--;
-            player.DropScrap();
+            scrapExplosion.DropScrap(); // Zmienione na scrapExplosion
         }
         yield return new WaitForSeconds(0.2f);
         losePanel.OpenPanel(false);
@@ -68,27 +70,27 @@ public class ScrapManager : MonoBehaviour
         {
             losePanel.OpenPanel(true);
         }
-        else
+        else if (!isPlayerDead) // Sprawdź, czy gracz już zginął
         {
+            isPlayerDead = true; // Ustaw flagę na true
             FindObjectOfType<PlayerController>().enabled = false;
-            StartCoroutine(LoseCutdownCorutine());
+            StartCoroutine(LoseCutdownCoroutine());
         }
     }
 
     public void AddScraps(int value)
     {
         points += value;
-
-        if (scrapNumber + value > valuesToLvlUp[actualAtackState])
+        if (scrapNumber + value > valuesToLvlUp[actualAttackState])
         {
-            if (actualAtackState + 1 > valuesToLvlUp.Length - 1)
+            if (actualAttackState + 1 >= valuesToLvlUp.Length) // Sprawdzenie, aby nie wykraczać poza tablicę
             {
-                SetSlider(actualAtackState, valuesToLvlUp[actualAtackState]);
+                SetSlider(actualAttackState, valuesToLvlUp[actualAttackState]);
             }
             else
             {
-                actualAtackState++;
-                SetSlider(actualAtackState, scrapNumber + value - valuesToLvlUp[actualAtackState - 1]);
+                actualAttackState++;
+                SetSlider(actualAttackState, scrapNumber + value - valuesToLvlUp[actualAttackState - 1]);
                 audioManager.Play("LevelUp");
             }
         }
@@ -109,17 +111,16 @@ public class ScrapManager : MonoBehaviour
         {
             points -= value;
         }
-
         if (scrapNumber - value < 0)
         {
-            if (actualAtackState - 1 < 0)
+            if (actualAttackState - 1 < 0)
             {
-                SetSlider(actualAtackState, 0);
+                SetSlider(actualAttackState, 0);
             }
             else
             {
-                actualAtackState--;
-                SetSlider(actualAtackState, valuesToLvlUp[actualAtackState]);
+                actualAttackState--;
+                SetSlider(actualAttackState, valuesToLvlUp[actualAttackState]);
                 audioManager.Play("LevelDown");
             }
         }

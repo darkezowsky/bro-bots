@@ -13,8 +13,7 @@ public class Scrap : MonoBehaviour
 
     void Start()
     {
-        moveDirection.x = Random.Range(-moveSpeed, moveSpeed);
-        moveDirection.z = Random.Range(-moveSpeed, moveSpeed);
+        SetRandomDirection();
         scrapManager = FindObjectOfType<ScrapManager>();
     }
 
@@ -22,12 +21,26 @@ public class Scrap : MonoBehaviour
     {
         transform.position += moveDirection * Time.deltaTime;
 
-        moveDirection = Vector3.Lerp(moveDirection, Vector3.zero, deceleration * Time.deltaTime);
+        // Zmiana kierunku w losowych odstępach czasu
+        if (moveDirection.magnitude > 0.1f)
+        {
+            moveDirection = Vector3.Lerp(moveDirection, Vector3.zero, deceleration * Time.deltaTime);
+        }
+        else
+        {
+            SetRandomDirection();
+        }
+    }
+
+    private void SetRandomDirection()
+    {
+        moveDirection.x = Random.Range(-moveSpeed, moveSpeed);
+        moveDirection.z = Random.Range(-moveSpeed, moveSpeed);
     }
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.tag == "Player")
+        if (collision.gameObject.CompareTag("Player"))
         {
             scrapManager.AddScraps(scrapValue);
             Destroy(this.gameObject);
