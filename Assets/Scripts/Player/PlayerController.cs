@@ -53,7 +53,7 @@ public class PlayerController : MonoBehaviour
 
 
     public ScrapManager scrapManager;
-    //public Animator characterAnim;
+    public Animator characterAnim; // Dodanie referencji do Animatora
     private Rigidbody _rb;
     private Vector3 _moveDir;
     private Vector3 _rollDir;
@@ -69,19 +69,11 @@ public class PlayerController : MonoBehaviour
     {
         _rb = GetComponent<Rigidbody>();
         _input = GetComponent<InputHandler>();
+        characterAnim = GetComponent<Animator>(); // Przypisanie animatora w Awake
     }
 
     void Update()
     {
-        //if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S) || (Input.GetKey(KeyCode.A) || (Input.GetKey(KeyCode.D))))
-        //{
-        //  //  characterAnim.SetBool("isRunning", true);
-        //}
-        //else
-        //{
-        // //   characterAnim.SetBool("isRunning", false);
-
-        //}
         switch (_state)
         {
             case State.WeaponStage1:
@@ -163,6 +155,17 @@ public class PlayerController : MonoBehaviour
         var movementVector = MoveTowardTarget(targetVector);
         RotateTowardMovementVector(movementVector);
         _moveDir = movementVector.normalized;
+
+        // Sprawdzenie czy postać biednie potrzebne do ustawienia animacji biegu w animatorze
+
+        if (movementVector != Vector3.zero)
+        {
+            characterAnim.SetBool("isRunning", true); // Animacja biegu
+        }
+        else
+        {
+            characterAnim.SetBool("isRunning", false); // Zatrzymanie animacji biegu
+        }
     }
 
     private Vector3 MoveTowardTarget(Vector3 targetVector)
@@ -281,12 +284,13 @@ public class PlayerController : MonoBehaviour
         {
             _isDashButtonDown = true;
         }
-
         if (Input.GetKeyDown(KeyCode.Space))
         {
             _rollDir = _moveDir;
             _rollSpeed = activeRollSpeed;
             _state = State.RollingDash;
+
+            characterAnim.SetTrigger("Dash"); // Uruchomienie animacji dasha
         }
     }
 
