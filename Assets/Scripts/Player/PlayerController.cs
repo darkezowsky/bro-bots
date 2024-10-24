@@ -15,27 +15,30 @@ public enum State
     WeaponStage2,
     WeaponStage3,
     WeaponStage4,
-    RollingDash,
+    Dash,
 }
+
 public class PlayerController : MonoBehaviour
 {
     [Header("Movement")]
-    /* public float moveX = 0f;
-     public float moveZ = 0f;*/
     public float moveSpeed = 7f;
     public float rotateSpeed;
-    public float activeRollSpeed = 150f;
+    public float activeDashSpeed = 150f;
     public float dashAmount = 10f;
-    //public Vector2 InputVector { get; private set; }
+    public Transform cameraTransform;
 
+    [Header("Dash Cooldown")]
+    public float dashCooldown = 2f;
+    private float dashCooldownTimer = 0f;
+    private bool canDash = true;
 
     [Header("Weapon States Stats")]
     public float firstWeaponAOERadius = 4f;
     public float secondWeaponAOERadius = 4f;
     public float thirdWeaponAOERadius = 4f;
     public float fourthWeaponAOERadius = 4f;
-    
-    public int secondWeaponStateScrap =  70;
+
+    public int secondWeaponStateScrap = 70;
     public int thirdWeaponStateScrap = 140;
     public int fourthWeaponStateScrap = 210;
 
@@ -45,31 +48,28 @@ public class PlayerController : MonoBehaviour
     public float aoeCooldownCurrent = 0;
     public Slider aoeSlider;
 
-    [Header(("Push Power"))] 
+    [Header(("Push Power"))]
     public float firstWeaponPushPower;
     public float secondWeaponPushPower;
     public float thirdWeaponPushPower;
     public float fourthWeaponPushPower;
 
-
     public ScrapManager scrapManager;
-    public Animator characterAnim; // Dodanie referencji do Animatora
+    public Animator characterAnim;
     private Rigidbody _rb;
     private Vector3 _moveDir;
-    private Vector3 _rollDir;
+    private Vector3 _dashDir;
     private Vector3 _lastMoveDir;
-    private float _rollSpeed;
+    private float _dashSpeed;
     private bool _isDashButtonDown;
     private State _state;
     private InputHandler _input;
-
-
 
     private void Awake()
     {
         _rb = GetComponent<Rigidbody>();
         _input = GetComponent<InputHandler>();
-        characterAnim = GetComponent<Animator>(); // Przypisanie animatora w Awake
+        characterAnim = GetComponent<Animator>();
     }
 
     void Update()
@@ -93,28 +93,29 @@ public class PlayerController : MonoBehaviour
                 AttackAoe();
                 break;
 
-            case State.RollingDash:
-                RollingDash();
-
+            case State.Dash:
+                DashMovement();
                 break;
         }
-        //if (scrapManager.scrapNumber <= 69)
-        //{
-        //    _state = State.WeaponStage1;
-        //}
-        //if (scrapManager.scrapNumber >= secondWeaponStateScrap)
-        //{
-        //    _state = State.WeaponStage2;
-        //}
+        /*
+        if (scrapManager.scrapNumber <= 69)
+        {
+            _state = State.WeaponStage1;
+        }
+        if (scrapManager.scrapNumber >= secondWeaponStateScrap)
+        {
+            _state = State.WeaponStage2;
+        }
 
-        //if (scrapManager.scrapNumber >= thirdWeaponStateScrap)
-        //{
-        //    _state = State.WeaponStage3;
-        //}
-        //if (scrapManager.scrapNumber >= fourthWeaponStateScrap)
-        //{
-        //    _state = State.WeaponStage4;
-        //}
+        if (scrapManager.scrapNumber >= thirdWeaponStateScrap)
+        {
+            _state = State.WeaponStage3;
+        }
+        if (scrapManager.scrapNumber >= fourthWeaponStateScrap)
+        {
+            _state = State.WeaponStage4;
+        }
+        */
     }
 
     private void AoeAttackCooldown()
@@ -141,7 +142,7 @@ public class PlayerController : MonoBehaviour
             aoeSlider.gameObject.SetActive(true);
         }
 
-        if (Input.GetMouseButtonDown(1) && aoeReady)
+        if (Input.GetMouseButtonDown(0) && aoeReady)
         {
             AttackAoe();
             aoeCooldownCurrent = 0.0f;
@@ -150,21 +151,27 @@ public class PlayerController : MonoBehaviour
 
     private void PlayerMovement()
     {
-        var targetVector = new Vector3(_input.InputVector.x, 0, _input.InputVector.y);
-    
+        Vector3 forward = cameraTransform.forward;
+        forward.y = 0;
+        forward.Normalize();
+
+        Vector3 right = cameraTransform.right;
+        right.y = 0;
+        right.Normalize();
+
+        Vector3 targetVector = (forward * _input.InputVector.y + right * _input.InputVector.x).normalized;
+
         var movementVector = MoveTowardTarget(targetVector);
         RotateTowardMovementVector(movementVector);
         _moveDir = movementVector.normalized;
 
-        // Sprawdzenie czy postać biednie potrzebne do ustawienia animacji biegu w animatorze
-
         if (movementVector != Vector3.zero)
         {
-            characterAnim.SetBool("isRunning", true); // Animacja biegu
+            characterAnim.SetBool("isRunning", true);
         }
         else
         {
-            characterAnim.SetBool("isRunning", false); // Zatrzymanie animacji biegu
+            characterAnim.SetBool("isRunning", false);
         }
     }
 
@@ -178,18 +185,18 @@ public class PlayerController : MonoBehaviour
 
     private void RotateTowardMovementVector(Vector3 movementVector)
     {
-        var rotation = Quaternion.LookRotation(movementVector);
-        transform.rotation = Quaternion.RotateTowards(transform.rotation, rotation, rotateSpeed);
+        if (movementVector != Vector3.zero)
+        {
+            var rotation = Quaternion.LookRotation(movementVector);
+            transform.rotation = Quaternion.RotateTowards(transform.rotation, rotation, rotateSpeed);
+        }
     }
-
 
     #region Attacking
 
     public void AttackAoe()
     {
         StartCoroutine(AttackSequenceAOE());
-
-        //animation
     }
 
     private IEnumerator AttackSequenceAOE()
@@ -197,56 +204,52 @@ public class PlayerController : MonoBehaviour
         yield return new WaitForSeconds(0.2f);
         CheckForEnemiesAndDealAoeDamage();
         yield return new WaitForSeconds(0.5f);
-        //particle
-        //attack
     }
-
 
     private void CheckForEnemiesAndDealAoeDamage()
     {
         //case State.WeaponStage1:
-                Collider[] colliders = Physics.OverlapSphere(transform.position, firstWeaponAOERadius);
-                foreach (Collider c in colliders)
+        Collider[] colliders = Physics.OverlapSphere(transform.position, firstWeaponAOERadius);
+        foreach (Collider c in colliders)
+        {
+            if (c.GetComponent<EnemyMovement>())
+            {
+                c.GetComponent<EnemyMovement>().Push();
+            }
+        }
+        /*
+                break;
+            case State.WeaponStage2:
+                Collider[] colliders2 = Physics.OverlapSphere(transform.position, secondWeaponAOERadius);
+                foreach (Collider c in colliders2)
                 {
                     if (c.GetComponent<EnemyMovement>())
                     {
                         c.GetComponent<EnemyMovement>().Push();
                     }
                 }
-            //    break;
-            //case State.WeaponStage2:
-            //    Collider[] colliders2 = Physics.OverlapSphere(transform.position, secondWeaponAOERadius);
-            //    foreach (Collider c in colliders2)
-            //    {
-            //        if (c.GetComponent<EnemyMovement>())
-            //        {
-            //            c.GetComponent<EnemyMovement>().Push();
-            //        }
-            //    }
-            //    break;
-            //case State.WeaponStage3:
-            //    Collider[] colliders3 = Physics.OverlapSphere(transform.position, thirdWeaponAOERadius);
-            //    foreach (Collider c in colliders3)
-            //    {
-            //        if (c.GetComponent<EnemyMovement>())
-            //        {
-            //            c.GetComponent<EnemyMovement>().Push();
-            //        }
-            //    }
-            //    break;
-            //case State.WeaponStage4:
-            //    Collider[] colliders4 = Physics.OverlapSphere(transform.position, fourthWeaponAOERadius);
-            //    foreach (Collider c in colliders4)
-            //    {
-            //        if (c.GetComponent<EnemyMovement>())
-            //        {
-            //            c.GetComponent<EnemyMovement>().Push();
-            //        }
-            //    }
-            //    break;
-        
-
-  
+                break;
+            case State.WeaponStage3:
+                Collider[] colliders3 = Physics.OverlapSphere(transform.position, thirdWeaponAOERadius);
+                foreach (Collider c in colliders3)
+                {
+                    if (c.GetComponent<EnemyMovement>())
+                    {
+                        c.GetComponent<EnemyMovement>().Push();
+                    }
+                }
+                break;
+            case State.WeaponStage4:
+                Collider[] colliders4 = Physics.OverlapSphere(transform.position, fourthWeaponAOERadius);
+                foreach (Collider c in colliders4)
+                {
+                    if (c.GetComponent<EnemyMovement>())
+                    {
+                        c.GetComponent<EnemyMovement>().Push();
+                    }
+                }
+                break;
+         */
     }
 
     private void OnDrawGizmosSelected()
@@ -263,14 +266,15 @@ public class PlayerController : MonoBehaviour
 
     #endregion
 
-    #region movement
-    private void RollingDash()
-    {
-        float rollSpeedDropMultiplier = 5f;
-        _rollSpeed -= _rollSpeed * rollSpeedDropMultiplier * Time.deltaTime;
+    #region Dash Movement
 
-        float rollSpeedMinimum = 50f;
-        if (_rollSpeed < rollSpeedMinimum)
+    private void DashMovement()
+    {
+        float dashSpeedDropMultiplier = 5f;
+        _dashSpeed -= _dashSpeed * dashSpeedDropMultiplier * Time.deltaTime;
+
+        float dashSpeedMinimum = 50f;
+        if (_dashSpeed < dashSpeedMinimum)
         {
             _state = State.WeaponStage1;
         }
@@ -278,19 +282,25 @@ public class PlayerController : MonoBehaviour
 
     private void PlayerDash()
     {
-
-
-        if (Input.GetKeyDown(KeyCode.Home))
+        if (canDash && Input.GetKeyDown(KeyCode.Space))
         {
-            _isDashButtonDown = true;
+            _dashDir = _moveDir;
+            _dashSpeed = activeDashSpeed;
+            _state = State.Dash;
+
+            characterAnim.SetTrigger("Dash");
+
+            canDash = false;
+            dashCooldownTimer = dashCooldown;
         }
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            _rollDir = _moveDir;
-            _rollSpeed = activeRollSpeed;
-            _state = State.RollingDash;
 
-            characterAnim.SetTrigger("Dash"); // Uruchomienie animacji dasha
+        if (!canDash)
+        {
+            dashCooldownTimer -= Time.deltaTime;
+            if (dashCooldownTimer <= 0f)
+            {
+                canDash = true;
+            }
         }
     }
 
@@ -298,10 +308,12 @@ public class PlayerController : MonoBehaviour
     {
         switch (_state)
         {
-            case State.RollingDash:
-                _rb.velocity = _rollDir * _rollSpeed;
+            case State.Dash:
+                _rb.velocity = _dashDir * _dashSpeed;
                 break;
         }
     }
+
     #endregion
 }
+

@@ -1434,7 +1434,7 @@ PrefabInstance:
     - target: {fileID: 9057405261720426614, guid: 85b1f9e1b257b2a45ad3010063766985,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85b1f9e1b257b2a45ad3010063766985, type: 3}
@@ -1703,6 +1703,10 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2100743182, guid: 5e8aae1329bff45409808489783a421e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2100743186, guid: 5e8aae1329bff45409808489783a421e, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -1774,8 +1778,28 @@ PrefabInstance:
       objectReference: {fileID: 2126618656}
     - target: {fileID: 6133821701202967095, guid: 5e8aae1329bff45409808489783a421e,
         type: 3}
+      propertyPath: moveSpeed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6133821701202967095, guid: 5e8aae1329bff45409808489783a421e,
+        type: 3}
+      propertyPath: dashAmount
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6133821701202967095, guid: 5e8aae1329bff45409808489783a421e,
+        type: 3}
       propertyPath: aoeCooldown
-      value: 3
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6133821701202967095, guid: 5e8aae1329bff45409808489783a421e,
+        type: 3}
+      propertyPath: rotateSpeed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6133821701202967095, guid: 5e8aae1329bff45409808489783a421e,
+        type: 3}
+      propertyPath: dashCooldown
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6133821701202967095, guid: 5e8aae1329bff45409808489783a421e,
         type: 3}
@@ -1789,8 +1813,38 @@ PrefabInstance:
       objectReference: {fileID: 959459883}
     - target: {fileID: 6133821701202967095, guid: 5e8aae1329bff45409808489783a421e,
         type: 3}
+      propertyPath: activeDashSpeed
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 6133821701202967095, guid: 5e8aae1329bff45409808489783a421e,
+        type: 3}
+      propertyPath: activeRollSpeed
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 6133821701202967095, guid: 5e8aae1329bff45409808489783a421e,
+        type: 3}
+      propertyPath: cameraTransform
+      value: 
+      objectReference: {fileID: 1576853403}
+    - target: {fileID: 6133821701202967095, guid: 5e8aae1329bff45409808489783a421e,
+        type: 3}
       propertyPath: aoeCooldownCurrent
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6133821701202967095, guid: 5e8aae1329bff45409808489783a421e,
+        type: 3}
+      propertyPath: firstWeaponAOERadius
+      value: 4.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 6133821701202967095, guid: 5e8aae1329bff45409808489783a421e,
+        type: 3}
+      propertyPath: thirdWeaponAOERadius
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6133821701202967095, guid: 5e8aae1329bff45409808489783a421e,
+        type: 3}
+      propertyPath: secondWeaponAOERadius
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8123886685039177885, guid: 5e8aae1329bff45409808489783a421e,
         type: 3}
@@ -2651,7 +2705,7 @@ MonoBehaviour:
     m_Bits: 1
   m_VolumeTrigger: {fileID: 0}
   m_RenderPostProcessing: 0
-  m_Antialiasing: 0
+  m_Antialiasing: 2
   m_AntialiasingQuality: 2
   m_StopNaN: 0
   m_Dithering: 0
