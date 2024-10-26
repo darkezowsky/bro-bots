@@ -33,6 +33,7 @@ public class PlayerController : MonoBehaviour
     private bool canDash = true;
 
     [Header("Weapon States Stats")]
+    [SerializeField] private GameObject handhead; // Umożliwia przypisanie w Inspektorze
     public float firstWeaponAOERadius = 4f;
     public float secondWeaponAOERadius = 4f;
     public float thirdWeaponAOERadius = 4f;
@@ -44,8 +45,8 @@ public class PlayerController : MonoBehaviour
 
     [Header("AoE Cooldown")]
     public bool aoeReady;
-    public float aoeCooldown = 2;
-    public float aoeCooldownCurrent = 0;
+    public float aoeCooldown = 2f;
+    private float aoeCooldownCurrent = 3f;
     public Slider aoeSlider;
 
     [Header(("Push Power"))]
@@ -55,7 +56,8 @@ public class PlayerController : MonoBehaviour
     public float fourthWeaponPushPower;
 
     public ScrapManager scrapManager;
-    public Animator characterAnim;
+    public Animator characterAnim; // Animator postaci
+    public Animator handheadAnim;   // Animator broni
     private Rigidbody _rb;
     private Vector3 _moveDir;
     private Vector3 _dashDir;
@@ -70,6 +72,20 @@ public class PlayerController : MonoBehaviour
         _rb = GetComponent<Rigidbody>();
         _input = GetComponent<InputHandler>();
         characterAnim = GetComponent<Animator>();
+
+        // Zainicjalizuj animator broni
+        if (handhead != null)
+        {
+            handheadAnim = handhead.GetComponent<Animator>();
+            if (handheadAnim == null)
+            {
+                Debug.LogError("Animator broni (handhead) nie został znaleziony!");
+            }
+        }
+        else
+        {
+            Debug.LogError("Obiekt 'handhead' nie został przypisany w Inspektorze!");
+        }
     }
 
     void Update()
@@ -145,6 +161,8 @@ public class PlayerController : MonoBehaviour
         if (Input.GetMouseButtonDown(0) && aoeReady)
         {
             AttackAoe();
+            characterAnim.SetTrigger("Attack_WeaponStage1"); // Animator postaci
+            handheadAnim.SetTrigger("Hand_Throw"); // Animator broni
             aoeCooldownCurrent = 0.0f;
         }
     }
