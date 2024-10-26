@@ -24,7 +24,7 @@ public class ObstacleManager : MonoBehaviour
     [SerializeField] private int timeToLoad;
     [SerializeField] private int laserActiveTime = 2;
     [SerializeField] private int laserPower;
-    [SerializeField] private GameObject light;
+    [SerializeField] private new GameObject light;
 
     [Header("Push options")]
     [SerializeField] private float cogsPower = 5;

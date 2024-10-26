@@ -47,6 +47,10 @@ public class LosePanel : MonoBehaviour
 
     public void OpenPanel(bool win)
     {
+        // Sprawdź, czy gra już jest zakończona, aby uniknąć wielokrotnego otwierania panelu
+        if (isGameOver)
+            return;
+
         // Ustaw stan gry na "game over"
         isGameOver = true;
 

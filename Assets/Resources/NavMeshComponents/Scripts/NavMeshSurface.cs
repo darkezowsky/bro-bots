@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using UnityEditor;
 
 namespace UnityEngine.AI
 {
@@ -368,12 +369,15 @@ namespace UnityEngine.AI
                 return false;
 
             // Prefab parent owns the asset reference
-            var prefabType = UnityEditor.PrefabUtility.GetPrefabType(this);
-            if (prefabType == UnityEditor.PrefabType.Prefab)
+            var prefabAssetType = PrefabUtility.GetPrefabAssetType(this);
+            var prefabInstanceStatus = PrefabUtility.GetPrefabInstanceStatus(this);
+
+            // Sprawdzamy, czy obiekt jest prefabrykatem, jeœli tak - nie zmieniamy zasobu
+            if (prefabAssetType == PrefabAssetType.Regular || prefabInstanceStatus == PrefabInstanceStatus.NotAPrefab)
                 return false;
 
             // An instance can share asset reference only with its prefab parent
-            var prefab = UnityEditor.PrefabUtility.GetPrefabParent(this) as NavMeshSurface;
+            var prefab = PrefabUtility.GetCorrespondingObjectFromSource(this) as NavMeshSurface;
             if (prefab != null && prefab.navMeshData == navMeshData)
                 return false;
 
