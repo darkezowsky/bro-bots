@@ -327,7 +327,7 @@ public class PlayerController : MonoBehaviour
         switch (_state)
         {
             case State.Dash:
-                _rb.velocity = _dashDir * _dashSpeed;
+                _rb.linearVelocity = _dashDir * _dashSpeed;
                 break;
         }
     }

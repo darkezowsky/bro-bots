@@ -21,7 +21,7 @@ public class EnemyManager : MonoBehaviour
         }
 
         // Znajdź EnemySpawner w scenie
-        enemySpawner = FindObjectOfType<EnemySpawner>();
+        enemySpawner = Object.FindAnyObjectByType<EnemySpawner>();
         if (enemySpawner == null)
         {
             Debug.LogWarning("EnemySpawner nie został przypisany do EnemyManager.");
@@ -37,7 +37,7 @@ public class EnemyManager : MonoBehaviour
     private void Start()
     {
         // Znajdź AudioManager, upewnij się, że nie jest null
-        audioManager = FindObjectOfType<AudioManager>();
+        audioManager = Object.FindAnyObjectByType<AudioManager>();
         if (audioManager == null)
         {
             Debug.LogError("Nie znaleziono AudioManager w scenie.");

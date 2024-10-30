@@ -113,9 +113,9 @@ namespace UnityEditor.AI
             var prefabAssetType = PrefabUtility.GetPrefabAssetType(navSurface);
             var prefabInstanceStatus = PrefabUtility.GetPrefabInstanceStatus(navSurface);
 
-            if (prefabInstanceStatus == PrefabInstanceStatus.Connected || prefabInstanceStatus == PrefabInstanceStatus.Disconnected)
+            // Usuwamy sprawdzenie na "Disconnected"
+            if (prefabInstanceStatus == PrefabInstanceStatus.Connected)
             {
-                
                 var parentSurface = PrefabUtility.GetCorrespondingObjectFromSource(navSurface) as NavMeshSurface;
                 if (parentSurface && navSurface.navMeshData == parentSurface.navMeshData)
                     return null;

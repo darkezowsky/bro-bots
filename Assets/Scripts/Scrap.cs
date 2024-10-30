@@ -14,7 +14,7 @@ public class Scrap : MonoBehaviour
     void Start()
     {
         SetRandomDirection();
-        scrapManager = FindObjectOfType<ScrapManager>();
+        scrapManager = Object.FindFirstObjectByType<ScrapManager>();
     }
 
     void Update()

@@ -31,7 +31,7 @@ public class ScrapManager : MonoBehaviour
 
     private void Start()
     {
-        audioManager = FindObjectOfType<AudioManager>();
+        audioManager = Object.FindAnyObjectByType<AudioManager>();
     }
 
     private void Update()
@@ -73,7 +73,7 @@ public class ScrapManager : MonoBehaviour
         else if (!isPlayerDead) // Sprawdź, czy gracz już zginął
         {
             isPlayerDead = true; // Ustaw flagę na true
-            FindObjectOfType<PlayerController>().enabled = false;
+            Object.FindFirstObjectByType<PlayerController>().enabled = false;
             StartCoroutine(LoseCutdownCoroutine());
         }
     }

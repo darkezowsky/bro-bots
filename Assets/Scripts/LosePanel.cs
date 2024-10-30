@@ -16,7 +16,7 @@ public class LosePanel : MonoBehaviour
     private void Start()
     {
         // Znajdź AudioManager w scenie
-        audioManager = FindObjectOfType<AudioManager>();
+        audioManager = Object.FindFirstObjectByType<AudioManager>();
 
         // Sprawdź, czy AudioManager został znaleziony
         if (audioManager != null)

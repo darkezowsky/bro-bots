@@ -9,7 +9,7 @@ public class Menu : MonoBehaviour
 
     private void Start()
     {
-        audioManager = FindObjectOfType<AudioManager>();
+        audioManager = Object.FindAnyObjectByType<AudioManager>();
         audioManager.Play("MenuMusic");
     }
 

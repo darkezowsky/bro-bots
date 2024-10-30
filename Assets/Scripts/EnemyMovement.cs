@@ -30,7 +30,7 @@ public class EnemyMovement : MonoBehaviour
     private void Start()
     {
         // Znajdź AudioManager i EnemyManager, upewnij się, że nie są null
-        audioManager = FindObjectOfType<AudioManager>();
+        audioManager = Object.FindAnyObjectByType<AudioManager>();
         if (audioManager == null)
         {
             Debug.LogError("Nie znaleziono AudioManager w scenie.");
