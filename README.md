@@ -6,6 +6,8 @@ About two hours before the submission deadline, we messed something up, and the 
 We were unable to fix the problems in time, and ultimately, the project was never submitted for jury evaluation.
 On June 13, 2021, the project was abandoned. Now, it's time to change that.
 
+![Preview](Assets/Graphics/MenuBackground.jpg)
+
 Main goals of the project:
 * **Fixing the bugs** encountered during the GMTK Game Jam 2021 that caused the project to fail.
 * **Refining or rewriting scripts** as needed to ensure better stability and performance.
